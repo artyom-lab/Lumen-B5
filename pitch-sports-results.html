@@ -1,0 +1,2961 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lumen - Sports Results</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/x-icon" href="img/Lumen-dots.png">
+		<link rel="stylesheet" href="libs/Bootstrap/bootstrap-4.3.1.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+		<link rel="stylesheet" href="libs/OwlCarousel/OwlCarousel-22.3.4.css">
+		<link rel="stylesheet" href="libs/OwlCarousel/OwlCarousel-22.3.4-owl.theme.css">
+		<link rel="stylesheet" href="libs/Waves/node-waves-0.7.6.css">
+    <link rel="stylesheet" href="libs/Select2/select2.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body class="body-2 menubar-pitches">
+
+		<aside class="sidebar-1">
+			<div class="sidebar-bottom">
+				<nav class="accordion-wrap">
+					<div>
+						<a href="#!" class="dashboard wave">
+							<div class="row row-1 align-items-center flex-nowrap">
+								<div class="col-auto">
+									<div class="dashboard-box">
+										<img src="img/icon-1.webp" class="fz-0" alt="">
+									</div>
+								</div>
+								<div class="col text-uppercase">Dashboard</div>
+							</div>
+						</a>
+					</div>
+					<div class="mt-2">
+						<a href="#!" class="dashboard wave">
+							<div class="row row-1 align-items-center flex-nowrap">
+								<div class="col-auto">
+									<div class="dashboard-box">
+										<img src="img/icon-home.webp" class="fz-0" alt="">
+									</div>
+								</div>
+								<div class="col text-uppercase">Home</div>
+							</div>
+						</a>
+					</div>
+					<div class="accordion accordion-1" id="accordionExample">
+						<div class="mt-2">
+							<a href="#!" class="dashboard wave" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-2.webp" class="fz-0" alt="">
+										</div>
+									</div>
+									<div class="col text-uppercase">Audience</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+							<div id="collapseOne" class="collapse" data-bs-parent="#accordionExample">
+								<div class="card-body">
+									<a href="#!">Traffic</a> 
+									<a href="#!">Geography</a> 
+									<a href="stories-index.html">Stories</a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-2">
+							<a href="#!" class="dashboard wave" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-3.webp" class="fz-0" alt="">
+										</div>
+									</div>
+									<div class="col text-uppercase">Influencers</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+							<div id="collapseTwo" class="collapse" data-bs-parent="#accordionExample">
+								<div class="card-body">
+									<a href="org-index.html">Organizations</a> 
+									<a href="#!">Types</a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-2">
+							<a href="#!" class="dashboard wave" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-4.webp" class="fz-0" alt="">
+										</div>
+									</div>
+									<div class="col text-uppercase">Newsletters</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+							<div id="collapseThree" class="collapse" data-bs-parent="#accordionExample">
+								<div class="card-body">
+									<a href="#!">Campaigns</a> 
+									<a href="#!">Subscriptions</a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-2">
+							<a href="#!" class="dashboard wave" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-5.webp" class="fz-0" alt="">
+										</div>
+									</div>
+									<div class="col text-uppercase">Social</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+							<div id="collapseFour" class="collapse" data-bs-parent="#accordionExample">
+								<div class="card-body">
+									<a href="#!">Sharing</a> 
+									<a href="#!">Campaigns</a> 
+								</div>
+							</div>
+						</div>
+
+						<div class="mt-2">
+							<a href="#!" class="dashboard wave" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-7.webp" class="fz-0" alt="">
+										</div>
+									</div>
+									<div class="col text-uppercase">Alerts</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+							<div id="collapseFive" class="collapse" data-bs-parent="#accordionExample">
+								<div class="card-body">
+									<a href="#!">Sent</a> 
+									<a href="#!">Sign-ups</a> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="nav flex-column nav-pills pt-3 mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="dashboard nav-link link-tablist wave" id="v-pills-pitches-tab" data-bs-toggle="pill" href="#v-pills-pitches" aria-controls="v-pills-pitches" tabindex="0">
+							<div class="row row-1 align-items-center flex-nowrap">
+								<div class="col-auto">
+									<div class="dashboard-box">
+										<img src="img/icon-6.webp" class="fz-0" alt="">
+									</div>
+								</div>
+								<div class="col text-uppercase">Pitches</div>
+							</div>
+						</a>
+						<a class="dashboard nav-link link-tablist mt-2 wave" id="v-pills-storywatcher-tab" data-bs-toggle="pill" href="#v-pills-storywatcher" aria-controls="v-pills-storywatcher" tabindex="0">
+							<div class="row row-1 align-items-center flex-nowrap">
+								<div class="col-auto">
+									<div class="dashboard-box">
+										<img src="img/icon-29.webp" class="fz-0" alt="">
+									</div>
+								</div>
+								<div class="col text-uppercase">Story Watcher</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="accordion accordion-1" id="accordionExample2">
+						<div class="mt-2">
+							<a href="#!" class="dashboard wave" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-8.webp" class="fz-0" alt="">
+										</div>
+									</div>
+									<div class="col text-uppercase">Administration</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+							<div id="collapseEight" class="collapse" data-bs-parent="#accordionExample2">
+								<div class="card-body">
+									<a href="#!">Users</a> 
+									<a href="#!">Accounts</a> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="select-user mt-xl-5">
+						<input type="text" class="form-control" placeholder="Select a User">
+						<img src="img/icon-9.webp" class="fz-0 input-icon" alt="" width="20">
+					</div>
+
+				</nav>
+				
+			</div>
+		</aside>
+
+		<aside class="sidebar-edit">
+	    <div class="tab-content" id="v-pills-tabContent">
+	      <div class="tab-pane fade show active" id="v-pills-pitches" aria-labelledby="v-pills-pitches-tab">
+					<div class="title mb-3">
+	    			<img src="img/icon-6.webp" alt="" width="20" class="me-1 align-middle">
+	    			<span class="align-middle">New Pitch</span>
+	    		</div>
+					<div class="pitch-box box-hide mb-3">
+						<div class="row row-1">
+							<div class="col-auto">
+								<a href="#!" class="close-box">
+									<img src="img/cross.webp" alt="" width="12">
+								</a>
+							</div>
+							<div class="col">
+								<div>Pitcher</div>
+								<div><b>Cole McKown</b></div>
+								<div>Pipeline Media, LLC</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="nav flex-column nav-newoptin nav-pitches" id="v-pills-tab">
+						  <a class="nav-link" id="v-pills-first-tab" data-bs-toggle="pill" href="#v-pills-first"><span class="pills-number">1</span>Sport Type</a>
+						  <a class="nav-link active" id="v-pills-second-tab" data-bs-toggle="pill" href="#v-pills-second"><span class="pills-number">2</span>Game Selection & Data</a>
+						  <a class="nav-link" id="v-pills-third-tab" data-bs-toggle="pill" href="#v-pills-third"><span class="pills-number">3</span>Review & Submit</a>
+						</div>
+					</div>
+	      </div>
+
+	      <div class="tab-pane fade" id="v-pills-storywatcher" aria-labelledby="v-pills-storywatcher-tab">
+	    		<div class="title mb-3">
+	    			<img src="img/icon-29.webp" alt="" width="20" class="me-1 align-middle">
+	    			<span class="align-middle">Stories</span>
+	    		</div>
+	    		<button class="btn btn-primary btn-create wave btn-block mb-3">New Story</button>
+	    		<div class="fz-14 mb-2"><b>Index</b></div>
+	    		<div class="mb-4">
+	    			<div class="mb-1"><b>Status</b></div>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Submitted</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Resubmitted</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Rejected</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Interview Request</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Lead</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Write</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Edit</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Fact Checking</span>
+						  <span class="ms-auto">(1)</span>
+						</label>
+						</label>
+						<label class="label-store label-small">       
+						  <input type="checkbox" name="status1">
+						  <span class="align-middle f"></span>
+						  <span class="align-middle ms-1">Published</span>
+						  <span class="ms-auto">(2)</span>
+						</label>
+	    		</div>
+	    		<div class="mb-4">
+	    			<div class="mb-1"><b>Project</b></div>
+						<div class="select-box">
+							<select class="select2" data-placeholder="Search or Select">
+								<option></option>
+	              <option value="0">AIC - Internal (2)</option>
+	              <option value="1">Metric Media (6)</option>
+	              <option value="2">Quigberg Strategy (2)</option>
+	              <option value="3">DuPage (2)</option>
+	              <option value="4">The Loop (2)</option>
+	              <option value="5">Texas Realty (2)</option>
+	              <option value="6">Mount Vernon (2)</option>
+	              <option value="7">Pipeline (2)</option>
+	              <option value="8">Record (2)</option>
+	              <option value="9">Cook (2)</option>
+							</select>
+						</div>
+	    		</div>
+	    		<div class="mb-4">
+	    			<div class="mb-1"><b>User</b></div>
+						<div class="select-box">
+							<select class="select2" data-placeholder="Search or Select">
+								<option></option>
+	              <option value="0">John Bathe (2)</option>
+	              <option value="1">Lisa Drake (6)</option>
+	              <option value="2">Paul Simpson (2)</option>
+	              <option value="3">Madison Record (2)</option>
+	              <option value="4">Penn Record (2)</option>
+	              <option value="5">John Bathe (2)</option>
+	              <option value="6">Lisa Drake (6)</option>
+	              <option value="7">Paul Simpson (2)</option>
+	              <option value="8">Madison Record (2)</option>
+	              <option value="9">Penn Record (2)</option>
+							</select>
+						</div>
+	    		</div>
+	    		<div class="mb-4">
+	    			<div class="mb-1"><b>Agency</b></div>
+						<div class="select-box">
+							<select class="select2" data-placeholder="Search or Select">
+								<option></option>
+	              <option value="0">Agency1 (2)</option>
+	              <option value="1">Agency2 (6)</option>
+	              <option value="2">Agency3 (2)</option>
+	              <option value="3">Agency4 (2)</option>
+	              <option value="4">Agency5 (2)</option>
+	              <option value="5">Agency6 (2)</option>
+	              <option value="6">Agency7 (2)</option>
+	              <option value="7">Agency8 (2)</option>
+	              <option value="8">Agency9 (2)</option>
+	              <option value="9">Agency10 (2)</option>
+							</select>
+						</div>
+	    		</div>
+	      </div>
+	    </div>
+		</aside>
+
+		<header class="navbar navbar-light bg-white fixed-top">
+			<div class="sidebar-top">
+				<div class="row align-items-center">
+					<div class="col">
+						<span class="logo-img"></span>
+						<a class="logo" href="index.html">Lumen</a>
+					</div>
+					<div class="col-auto">
+						<button class="sandwich" id="sandwich-1">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<form class="form-inline form-dropdown d-none d-xl-flex">
+				<div class="row w-100">
+					<div class="col-auto">
+						<div class="dropdown dropdown-2">
+							<a href="#!" class="network wave2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-network.webp" class="fz-0" alt="" width="20">
+										</div>
+									</div>
+									<div class="col">
+										<div class="font-weight-bold fz-14">St. Joseph County</div>
+										<div class="fz-11">Legal Journals</div>
+									</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+						  <div class="dropdown-menu fz-12 py-0" aria-labelledby="dropdownMenuButton">
+						  	<div class="dropdown-2-head">
+									<div class="nav nav-tabs justify-content-around justify-content-lg-between">
+										<a class="nav-link active" data-bs-toggle="tab" href="#tab1">PROJECTS</a>
+										<a class="nav-link" data-bs-toggle="tab" href="#tab2">AGENCIES</a>
+						    	</div>
+						  	</div>
+						  	<div class="dropdown-2-body">
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="tab1">
+											<div class="row">
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Networks</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="1">
+															<span>Project Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="2">
+															<span>Project Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="3" checked="">
+															<span>Project Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="4">
+															<span>Project Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="5" checked="">
+															<span>Project Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="6">
+															<span>Project Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="7">
+															<span>Project Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="8">
+															<span>Project Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="9">
+															<span>Project Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="10">
+															<span>Project Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="11">
+															<span>Project Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="12">
+															<span>Project Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="13">
+															<span>Project Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="14">
+															<span>Project Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="15">
+															<span>Project Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="16">
+															<span>Project Name #16</span>
+														</label>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Projects</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="1">
+															<span>Project Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="2">
+															<span>Project Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="3">
+															<span>Project Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="4">
+															<span>Project Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="5">
+															<span>Project Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="6" checked="">
+															<span>Project Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="7">
+															<span>Project Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="8">
+															<span>Project Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="9">
+															<span>Project Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="10">
+															<span>Project Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="11">
+															<span>Project Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="12">
+															<span>Project Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="13">
+															<span>Project Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="14">
+															<span>Project Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="15">
+															<span>Project Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="16">
+															<span>Project Name #16</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="tab2">
+											<div class="row">
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Networks</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="1">
+															<span>Agency Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="2">
+															<span>Agency Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="3">
+															<span>Agency Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="4">
+															<span>Agency Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="5">
+															<span>Agency Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="6">
+															<span>Agency Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="7">
+															<span>Agency Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="8">
+															<span>Agency Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="9">
+															<span>Agency Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="10">
+															<span>Agency Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="11">
+															<span>Agency Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="12">
+															<span>Agency Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="13">
+															<span>Agency Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="14">
+															<span>Agency Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="15">
+															<span>Agency Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="16">
+															<span>Agency Name #16</span>
+														</label>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Agencies</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="1">
+															<span>Agency Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="2">
+															<span>Agency Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="3">
+															<span>Agency Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="4">
+															<span>Agency Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="5">
+															<span>Agency Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="6">
+															<span>Agency Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="7">
+															<span>Agency Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="8">
+															<span>Agency Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="9">
+															<span>Agency Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="10">
+															<span>Agency Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="11">
+															<span>Agency Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="12">
+															<span>Agency Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="13">
+															<span>Agency Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="14">
+															<span>Agency Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="15">
+															<span>Agency Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="16">
+															<span>Agency Name #16</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+						  	</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+				    <div class="dropdown dropdown-search">
+				      <input class="form-control fz-13 dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" type="text" placeholder="Search for a Story or Pitch">
+				      <button class="fas fa-search"></button>
+				      <div class="dropdown-menu search-dropdown w-100">
+				      	<div class="loc-border pe-2">
+				          <div class="search-inside">
+				          	<div class="news-box">
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          	</div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+					</div>
+				</div>
+	    </form>
+			<div class="ms-auto position-relative d-inline-block me-3 me-xl-5">
+				<a href="#!" id="reportrange">
+					<span></span>
+				</a>
+				<i class="fas fa-chevron-right"></i>
+			</div>
+			<div class="dropdown dropdown-1">
+				<a href="#!" class="avatar dropdown-toggle ms-3 wave2" data-bs-toggle="dropdown" data-bs-auto-close="outside" style="background-image: url(img/avatar.webp)"></a>
+	      <div class="dropdown-menu dropdown-menu-end">
+	        <a href="#!" class="dropdown-item">Edit Profile</a>
+	        <a href="#!" class="dropdown-item d-flex align-items-center"><span>Inbox</span><span class="badge badge-danger ms-auto">2</span></a>
+	        <a href="#!" class="dropdown-item">Calendar</a>
+	        <a href="#!" class="dropdown-item">Setting</a>
+					<label class="switch-wrap d-none mb-0">
+						<span>Pitches Fixed</span>
+						<input type="checkbox" id="sidebar-switcher">
+						<span class="lever"></span>
+					</label>
+					<label class="switch-wrap">
+						<span>Dark Mode</span>
+						<input type="checkbox" id="dark-mode">
+						<span class="lever"></span>
+					</label>
+	        <div class="dropdown-divider"></div>
+	        <a href="#!" class="dropdown-item">Log Out</a>
+	      </div>
+			</div>
+			<button class="sandwich ms-3 d-none" id="sandwich-2">
+				<span></span>
+			</button>
+		</header>
+
+		<div class="w-1550">
+			<section class="content d-flex flex-column">
+				<div class="row section-search d-xl-none">
+					<div class="col-12 col-md-auto mb-3 mb-md-0">
+						<div class="dropdown dropdown-2">
+							<a href="#!" class="network wave2 dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+								<div class="row row-1 align-items-center flex-nowrap">
+									<div class="col-auto">
+										<div class="dashboard-box">
+											<img src="img/icon-network.webp" class="fz-0" alt="" width="20">
+										</div>
+									</div>
+									<div class="col">
+										<div class="font-weight-bold fz-14">St. Joseph County</div>
+										<div class="fz-11">Legal Journals</div>
+									</div>
+								</div>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+						  <div class="dropdown-menu fz-12 py-0" aria-labelledby="dropdownMenuButton">
+						  	<div class="dropdown-2-head">
+									<div class="nav nav-tabs justify-content-around justify-content-lg-between">
+										<a class="nav-link active" data-bs-toggle="tab" href="#net1">PROJECTS</a>
+										<a class="nav-link" data-bs-toggle="tab" href="#net2">AGENCIES</a>
+						    	</div>
+						  	</div>
+						  	<div class="dropdown-2-body">
+									<div class="tab-content">
+										<div class="tab-pane fade show active" id="net1">
+											<div class="row">
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Networks</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="1">
+															<span>Project Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="2">
+															<span>Project Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="3" checked="">
+															<span>Project Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="4">
+															<span>Project Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="5" checked="">
+															<span>Project Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="6">
+															<span>Project Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="7">
+															<span>Project Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="8">
+															<span>Project Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="9">
+															<span>Project Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="10">
+															<span>Project Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="11">
+															<span>Project Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="12">
+															<span>Project Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="13">
+															<span>Project Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="14">
+															<span>Project Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="15">
+															<span>Project Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network" value="16">
+															<span>Project Name #16</span>
+														</label>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Projects</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="1">
+															<span>Project Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="2">
+															<span>Project Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="3">
+															<span>Project Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="4">
+															<span>Project Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="5">
+															<span>Project Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="6" checked="">
+															<span>Project Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="7">
+															<span>Project Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="8">
+															<span>Project Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="9">
+															<span>Project Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="10">
+															<span>Project Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="11">
+															<span>Project Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="12">
+															<span>Project Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="13">
+															<span>Project Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="14">
+															<span>Project Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="15">
+															<span>Project Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="project" value="16">
+															<span>Project Name #16</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="net2">
+											<div class="row">
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Networks</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="1">
+															<span>Agency Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="2">
+															<span>Agency Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="3">
+															<span>Agency Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="4">
+															<span>Agency Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="5">
+															<span>Agency Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="6">
+															<span>Agency Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="7">
+															<span>Agency Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="8">
+															<span>Agency Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="9">
+															<span>Agency Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="10">
+															<span>Agency Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="11">
+															<span>Agency Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="12">
+															<span>Agency Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="13">
+															<span>Agency Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="14">
+															<span>Agency Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="15">
+															<span>Agency Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="network2" value="16">
+															<span>Agency Name #16</span>
+														</label>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="text-center font-weight-bold pb-3">Agencies</div>
+													<div class="tab-box">
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="1">
+															<span>Agency Name #1</span>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="2">
+															<span>Agency Name #2</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="3">
+															<span>Agency Name #3</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="4">
+															<span>Agency Name #4</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="5">
+															<span>Agency Name #5</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="6">
+															<span>Agency Name #6</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="7">
+															<span>Agency Name #7</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="8">
+															<span>Agency Name #8</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="9">
+															<span>Agency Name #9</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="10">
+															<span>Agency Name #10</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="11">
+															<span>Agency Name #11</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="12">
+															<span>Agency Name #12</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="13">
+															<span>Agency Name #13</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="14">
+															<span>Agency Name #14</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="15">
+															<span>Agency Name #15</span>
+														</label>
+														</label>
+														<label class="radio-group">
+															<input type="checkbox" name="agency" value="16">
+															<span>Agency Name #16</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+						  	</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-12 col-md">
+				    <div class="dropdown dropdown-search">
+				      <input class="form-control fz-13 dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" type="text" placeholder="Search for a Story or Pitch">
+				      <button class="fas fa-search"></button>
+				      <div class="dropdown-menu search-dropdown w-100">
+				      	<div class="loc-border pe-2">
+				          <div class="search-inside">
+				          	<div class="news-box">
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<img src="img/news.webp" alt="" width="18">
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">DuPage County Commissioner sed do eiusmod tempor incididunt ut labore ullamco laboris nisi...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          		<a href="#!" class="news">
+				          			<div class="row row-1">
+				          				<div class="col-auto">
+				          					<div class="w-18"></div>
+				          				</div>
+				          				<div class="col">
+				          					<span class="d-block title">Ullamco laboris nisi DuPage County Commissioner sed do eiusmod tempor incididunt ut labor...</span>
+				          					<span class="d-block">DuPage Policy Journal</span>
+				          				</div>
+				          				<div class="col-2 date">Jan. 14, 2021</div>
+				          			</div>
+				          		</a>
+				          	</div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>				
+					</div>
+				</div>
+				<div class="cart flex-grow-1 cart-promotion">
+				  <div class="row">
+						<div class="col">
+							<div class="tab-content fz-13" id="v-pills-tabContent2">
+							  <div class="tab-pane fade" id="v-pills-first">
+									<div class="cart h-auto">
+										<div class="cart-content">
+											<div class="fz-15 font-weight-bold text-uppercase">Select a sports report type</div>
+											<p>Select the type of pitch you want to submit. More sports forms are coming.</p>
+												<div class="row row-15 mt-4">
+													<div class="col-md-6 col-xl-4 mb-4">
+														<div class="pitch-box pitch-select">
+															<div class="fz-15 font-weight-bold text-uppercase mb-3">Football</div>
+															<p>Submit results from a recent football game</p>
+															<b>Details</b>
+															<ul class="mt-1">
+																<li>Game boxscore</li>
+																<li>Scoring plays</li>
+																<li>Team offensive and defensive stats</li>
+																<li>Individual player stats</li>
+															</ul>
+															<button class="btn btn-primary btn-update mt-3 px-4 wave">Select</button>
+														</div>
+													</div>
+												</div>
+										</div>
+									</div>
+								</div>
+
+							  <div class="tab-pane fade  show active" id="v-pills-second">
+									<div class="cart h-auto">
+										<div class="cart-content">	
+											<div class="fz-15 font-weight-bold text-uppercase">Team Selection</div>
+											<p>Select a team you wish to enter a sporting result for. Available teams cover College, High School and Youth levels. For College and High School, you can search by either the school name or the team name. For example, you could search for <i>Glenbard West High School, Glenbard West Hilltoppers, or Glenbard West Hilltoppers Football.</i></p>
+											<div class="row">
+												<div class="col-sm-9">
+													<div class="select-box">
+														<select class="select2" data-placeholder="Search for a team">
+															<option></option>
+							                <option value="0">Marist RedHawks</option>
+							                <option value="1">De Smet Spartans</option>
+							                <option value="2">Downers Glove North Trojans</option>
+							                <option value="3">Lyons Township Lions</option>
+							                <option value="4">Leyden Eagles</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cart h-auto">
+										<div class="cart-content">	
+											<div class="fz-15 font-weight-bold text-uppercase">Game Selection</div>
+											<p>Based on the team selected in the Team Selection above, select the game you want to provide a result for. Games are limited to only games that have occured and for the current season of that team.</p>
+											<div class="table-responsive">
+												<table class="table table-sports table-borderless">
+													<thead>
+														<tr>
+															<th class="pr-1"></th>
+															<th class="ps-1">Date</th>
+															<th>Time</th>
+															<th>Opponent</th>
+															<th>Location</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th class="px-1">
+																<label class="label-store mb-0">       
+																	<input type="radio" name="sport1" checked>
+																	<span class="align-middle f"></span>
+															  </label>
+															</th>
+															<td class="ps-1">Sat, Aug 26</td>
+															<td>1:30PM</td>
+															<td>
+																<span class="align-middle">vs</span>
+																<span class="img-team-table">
+                        					<img src="img/team1.webp" alt="">
+                        				</span>
+															 	<span class="align-middle">Marist RedHawks</span>
+															</td>
+															<td>Glenbard West High School</td>
+														</tr>
+														<tr>
+															<th class="px-1">
+																<label class="label-store mb-0">       
+																	<input type="radio" name="sport1">
+																	<span class="align-middle f"></span>
+															  </label>
+															</th>
+															<td class="ps-1">Sat, Sep 2</td>
+															<td>2:30PM</td>
+															<td>
+																<span class="align-middle">vs</span>
+																<span class="img-team-table">
+                        					<img src="img/team2.webp" alt="">
+                        				</span>
+															 	<span class="align-middle">De Smet Spartans</span>
+															</td>
+															<td>(Neutral Field)</td>
+														</tr>
+														<tr>
+															<th class="px-1">
+																<label class="label-store mb-0">       
+																	<input type="radio" name="sport1">
+																	<span class="align-middle f"></span>
+															  </label>
+															</th>
+															<td class="ps-1">Sat, Sep 9</td>
+															<td>1:30PM</td>
+															<td>
+																<span class="align-middle">vs</span>
+																<span class="img-team-table">
+                        					<img src="img/team3.webp" alt="">
+                        				</span>
+															 	<span class="align-middle">Downers Grove North Trojans</span>
+															</td>
+															<td>Glenbard West High School</td>
+														</tr>
+														<tr>
+															<th class="px-1">
+																<label class="label-store mb-0">       
+																	<input type="radio" name="sport1">
+																	<span class="align-middle f"></span>
+															  </label>
+															</th>
+															<td class="ps-1">Sat, Sep 16</td>
+															<td>1:30PM</td>
+															<td>
+																<span class="align-middle">vs</span>
+																<span class="img-team-table">
+                        					<img src="img/team4.webp" alt="">
+                        				</span>
+															 	<span class="align-middle">Lyons Township Lions</span>
+															</td>
+															<td>Glenbard West High School</td>
+														</tr>
+														<tr>
+															<th class="px-1">
+																<label class="label-store mb-0">       
+																	<input type="radio" name="sport1">
+																	<span class="align-middle f"></span>
+															  </label>
+															</th>
+															<td class="ps-1">Thu, Sep 21</td>
+															<td>6:00PM</td>
+															<td>
+																<span class="align-middle">vs</span>
+																<span class="img-team-table">
+                        					<img src="img/team5.webp" alt="">
+                        				</span>
+															 	<span class="align-middle">Leyden Eagles</span>
+															</td>
+															<td>Leyden High School</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="cart h-auto">
+										<div class="cart-content">	
+											<div class="fz-15 font-weight-bold text-uppercase">Boxscore</div>
+											<p>Enter the boxscore for the football game between Marist Redhawks and Glenbard West Hilltoppers on Sat, Aug 26, 2023 at 1:30PM</p>
+											<div class="row">
+												<div class="col-auto">
+													<div class="table-responsive">
+														<table class="table table-mini table-borderless">
+															<thead>
+																<tr>
+																	<td></td>
+																	<td>Q1</td>
+																	<td>Q2</td>
+																	<td>Q3</td>
+																	<td>Q4</td>
+																	<td>F</td>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="text-right">Marist Redhawks</td>
+																	<td>										
+																		<input type="number" class="form-control input-games" min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games" min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games"min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games"min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games font-weight-bold" min="0" max="99">
+																	</td>
+																</tr>
+																<tr>
+																	<td class="text-right">Glenbard West Hilltoppers</td>
+																	<td>										
+																		<input type="number" class="form-control input-games" min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games" min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games" min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games" min="0" max="99">
+																	</td>
+																	<td>										
+																		<input type="number" class="form-control input-games font-weight-bold" min="0" max="99">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cart h-auto">
+										<div class="cart-content">	
+											<div class="fz-15 font-weight-bold text-uppercase">Scoring Plays</div>
+											<p>Enter the scoring plays for each team. Scoring plays are divided by team.</p>
+											<div class="hidden-container mb-4">
+												<div class="mb-2"><b>Marist Redhawks Scoring Plays</b></div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Rushing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="text" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Receiving Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Passing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Receiving Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Passing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>2pt Con Passer</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Kicker</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Receiving Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+													</div>
+												</div>
+												<div class="box-hide box-hidden mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Rushing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="text" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ms-4 py-2 wave">New Scoring Play</button>
+											</div>
+											<div class="hidden-container mb-4">
+												<div class="mb-2"><b>Glenbard West Hilltoppers Scoring Plays</b></div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Rushing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defencive Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Receiving Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defencive Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Receiving Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Receiving Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box-hide box-hidden mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+									                <option value="4">OT</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Rushing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="text" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ms-4 py-2 wave">New Scoring Play</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart h-auto">
+										<div class="cart-content">	
+											<div class="fz-15 font-weight-bold text-uppercase">Team Totals</div>
+											<p>Enter the team totals for the game.</p>
+											<div class="mb-4">
+												<div class="mb-2"><b>Marist Redhawks Totals</b></div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<div class="w-85 mb-1"><b>Offence</b></div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>First Downs</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Possession</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+													</div>
+												</div>
+												<div class="box-hide">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<div class="w-85 mb-1"><b>Defence</b></div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+													</div>
+												</div>
+											</div>
+											<div>
+												<div class="mb-2"><b>Marist Redhawks Totals</b></div>
+												<div class="box-hide mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<div class="w-85 mb-1"><b>Offence</b></div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>First Downs</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Possession</b></div>
+															<input type="text" class="form-control input-games input-games-small input-time" placeholder= "00:00"> 
+														</div>
+													</div>
+												</div>
+												<div class="box-hide">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<div class="w-85 mb-1"><b>Defence</b></div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" min="0" max="99"> 
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cart h-auto">
+										<div class="cart-content">	
+											<div class="fz-15 font-weight-bold text-uppercase">Team Individual Stats</div>
+											<p>Enter the Offensive and Defensive stats for each team.</p>
+											<div class="hidden-container mb-4">
+												<div class="mb-2"><b>Marist Redhawks Offensive Player Stats</b></div>
+												<div class="box-hide mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Offensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Offensive Player 1</option>
+									                <option value="1">Offensive Player 2</option>
+									                <option value="2">Offensive Player 3</option>
+									                <option value="3">Offensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Offensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Offensive Player 1</option>
+									                <option value="1">Offensive Player 2</option>
+									                <option value="2">Offensive Player 3</option>
+									                <option value="3">Offensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ms-4 py-2 wave">New Offensive <Pla></Pla>yer</button>
+											</div>
+											<div class="hidden-container mb-4">
+												<div class="mb-2"><b>Marist Redhawks Defensive Player Stats</b></div>
+												<div class="box-hide mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Defensive Player 1</option>
+									                <option value="1">Defensive Player 2</option>
+									                <option value="2">Defensive Player 3</option>
+									                <option value="3">Defensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Defensive Player 1</option>
+									                <option value="1">Defensive Player 2</option>
+									                <option value="2">Defensive Player 3</option>
+									                <option value="3">Defensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ms-4 py-2 wave">New Defensive Player</button>
+											</div>
+											<div class="hidden-container mb-4">
+												<div class="mb-2"><b>Glenbard West Hilltoppers Offensive Player Stats</b></div>
+												<div class="box-hide mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Offensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Offensive Player 1</option>
+									                <option value="1">Offensive Player 2</option>
+									                <option value="2">Offensive Player 3</option>
+									                <option value="3">Offensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Offensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Offensive Player 1</option>
+									                <option value="1">Offensive Player 2</option>
+									                <option value="2">Offensive Player 3</option>
+									                <option value="3">Offensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ms-4 py-2 wave">New Offensive Player</button>
+											</div>
+											<div class="hidden-container mb-4">
+												<div class="mb-2"><b>Glenbard West Hilltoppers Defensive Player Stats</b></div>
+												<div class="box-hide mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Defensive Player 1</option>
+									                <option value="1">Defensive Player 2</option>
+									                <option value="2">Defensive Player 3</option>
+									                <option value="3">Defensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Defensive Player 1</option>
+									                <option value="1">Defensive Player 2</option>
+									                <option value="2">Defensive Player 3</option>
+									                <option value="3">Defensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ms-4 py-2 wave">New Defensive Player</button>
+											</div>
+										</div>
+									</div>
+									<div class="cart h-auto">
+										<div class="cart-content">	
+											<div class="fz-15 font-weight-bold text-uppercase">Images</div>
+											<p>Only include images that are not copy-written and that we can publicly publish. The image caption and source (url) are required.</p>
+											<div>
+												<div class="mb-2"><b>Upload an image from the Game</b></div>
+												<div class="row">
+													<div class="col-md-auto mb-2 mb-md-0">
+													  <div class="drop-zone">
+													    <span class="drop-zone__prompt">Drag-n-drop <br> or <br> Click here to Browse Files</span>
+													    <input type="file" name="myFile" class="drop-zone__input">
+													  </div>
+													</div>
+													<div class="col-md">
+														<form class="form-inline form-store">
+															<input type="text" class="form-control" placeholder="Caption*"> 
+															<input type="text" class="form-control" placeholder="Credit*"> 
+														</form>	
+														<div>*If an image is uploaded, both the caption and the credit are required.</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							  </div>
+
+							  <div class="tab-pane fade" id="v-pills-third">
+									<div class="cart h-auto">
+										<div class="cart-content">Review & Submit CONTENT</div>
+									</div>
+							  </div>
+							</div>
+							<button class="btn btn-primary btn-update mt-2 wave">Advance</button>
+						</div>
+			  	</div>
+		  	</div>
+			</section>
+		</div>
+		
+		<script src="libs/Jquery/jquery-3.3.1.js"></script>
+		<script src="libs/Popper/popper.js-1.14.7.js"></script>
+		<script src="libs/Bootstrap/bootstrap-4.3.1.js"></script>
+		<script src="libs/OwlCarousel/OwlCarousel-22.3.4.js"></script>
+		<script src="libs/Select2/select2.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+		<script src="libs/Waves/node-waves-0.7.6.js"></script>
+		<script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
