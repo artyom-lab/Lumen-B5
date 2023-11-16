@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-$(document).on('click.bs.dropdown.data-api', '.dropdown-menu', function (e) { 
-    e.stopPropagation();
-  });
-
 $(".owl-4").owlCarousel({
   items: 1,
   smartSpeed: 1200,
@@ -87,12 +83,20 @@ $(".sidebar-1").hover(function(){
   $(this).removeClass("sidebar-small");
 });
 
-$(".link-tablist").on("click", function(){
-  if ($(this).hasClass('active')) 
-    $('body').toggleClass('menubar-pitches');
-  else 
-    $('body').addClass('menubar-pitches');
+$("#v-pills-pitches-tab").on("click", function() {
+  $("body").toggleClass("menubar-pitches").removeClass("menubar-pitches2");
 });
+$("#v-pills-storywatcher-tab").on("click", function() {
+  $("body").toggleClass("menubar-pitches2").removeClass("menubar-pitches");
+});
+
+// $(".link-tablist").on("click", function() {
+//   if ($(this).hasClass("active")) {
+//     $("body").toggleClass("menubar-pitches");
+//   } else {
+//     $("body").addClass("menubar-pitches");
+//   }
+// });
 
 if (window.matchMedia('(min-width: 1200px)').matches)
 {

@@ -74,12 +74,12 @@ body {
       body.menubar-1 .content {
         pointer-events: none;
         opacity: 0.7; } }
-  body.menubar-1.menubar-pitches {
+  body.menubar-1.menubar-pitches, body.menubar-1.menubar-pitches2 {
     padding-left: 0 !important; }
     @media (max-width: 991.98px) {
-      body.menubar-1.menubar-pitches .sidebar-edit {
+      body.menubar-1.menubar-pitches .sidebar-edit, body.menubar-1.menubar-pitches2 .sidebar-edit {
         left: 0 !important; }
-      body.menubar-1.menubar-pitches .content {
+      body.menubar-1.menubar-pitches .content, body.menubar-1.menubar-pitches2 .content {
         transform: translateX(220px); } }
   @media (max-width: 1399.98px) {
     body.menubar-2 {
@@ -94,20 +94,20 @@ body {
     body.menubar-2 .content {
       pointer-events: none;
       opacity: 0.7; } }
-  body.menubar-pitches {
+  body.menubar-pitches, body.menubar-pitches2 {
     padding-left: 220px; }
-    body.menubar-pitches .sidebar-edit {
+    body.menubar-pitches .sidebar-edit, body.menubar-pitches2 .sidebar-edit {
       left: 0; }
     @media (max-width: 991.98px) {
-      body.menubar-pitches {
+      body.menubar-pitches, body.menubar-pitches2 {
         padding-left: 0; }
-        body.menubar-pitches .sidebar-edit {
+        body.menubar-pitches .sidebar-edit, body.menubar-pitches2 .sidebar-edit {
           left: -220px; } }
     @media (min-width: 1200px) {
-      body.menubar-pitches {
+      body.menubar-pitches, body.menubar-pitches2 {
         padding-left: 275px; } }
     @media (min-width: 1950px) {
-      body.menubar-pitches {
+      body.menubar-pitches, body.menubar-pitches2 {
         padding-left: 330px; } }
   @media (min-width: 1200px) {
     body.body-2 {
