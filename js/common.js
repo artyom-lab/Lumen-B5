@@ -154,7 +154,6 @@ $(document).ready(function () {
   });
 });
 
-
 // CALENDAR
 
 var start = moment("03/15/2023"),
