@@ -2798,4 +2798,15 @@ label {
   .opportunity-calendar .form-control:last-child {
     border-radius: 0 0 8px 8px; }
 
+.table-opportunity .tr-total th, .table-opportunity .tr-total td, .table-opportunity .tr-subtotal th, .table-opportunity .tr-subtotal td {
+  font-weight: bold !important;
+  padding-top: 9px;
+  padding-bottom: 9px; }
+.table-opportunity .tr-total {
+  background: #d6d6e2; }
+.table-opportunity .tr-subtotal {
+  background: #efeff4; }
+.table-opportunity th, .table-opportunity td {
+  text-align: left !important; }
+
 /*# sourceMappingURL=style.css.map */
