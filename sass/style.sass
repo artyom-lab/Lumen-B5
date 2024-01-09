@@ -41,9 +41,9 @@ $color-cancel: #fa3455
 $color-rgba: rgba(196, 196, 196, .35)
 
 .red
-	color: $color-red
+	color: $color-red !important
 .green 
-	color: $color-green
+	color: $color-green !important
 .blue 
 	color: $color-blue
 .orange
@@ -99,7 +99,7 @@ body
 			.content
 				pointer-events: none
 				opacity: .7
-		&.menubar-pitches, &.menubar-pitches2
+		&.menubar-pitches, &.menubar-pitches2, &.menubar-pitches3
 			padding-left: 0 !important
 			@media (max-width: 991.98px)
 				.sidebar-edit
@@ -117,7 +117,7 @@ body
 			.content
 				pointer-events: none
 				opacity: .7
-	&.menubar-pitches, &.menubar-pitches2
+	&.menubar-pitches, &.menubar-pitches2, &.menubar-pitches3
 		padding-left: 220px
 		.sidebar-edit
 			left: 0
@@ -388,6 +388,9 @@ label
 		display: none
 	.nav-pills
 		border-top: 2px solid $color-border-light
+		border-bottom: 2px solid $color-border-light
+		padding: 16px 0
+		margin: 16px 0
 	.accordion-wrap
 		padding: 10px
 		.dashboard
@@ -2013,8 +2016,10 @@ label
 
 .status
 	color: $color-white
-	padding: 2px 8px
+	padding: 3px 8px
+	max-width: 150px
 	border-radius: 5px
+	text-align: center
 	&.status-published
 		background: #00c258
 	&.status-resubmitted
@@ -2033,6 +2038,10 @@ label
 		background: #ff004b
 	&.status-checking
 		background: #00c2a7
+	&.status-partner
+		background: #fc5c5c
+	&.status-baseline
+		background: $color-blue
 
 .previous-left
 	transform: rotate(-180deg)
@@ -2373,7 +2382,7 @@ label
 	width: 220px
 	top: 62px
 	bottom: 0
-	padding: 25px 4px 130px 65px
+	padding: 25px 15px 130px 65px
 	left: -220px
 	max-height: 100vh
 	color: $color-sidebar
@@ -2395,10 +2404,11 @@ label
 	@media (min-width: 1950px)
 		width: 330px
 		left: -330px
+	@media (max-width: 1199.98px)	
+		padding: 25px 4px 130px 65px
 	@media (max-width: 991.98px)	
 		left: -220px
 		right: auto
-	@media (max-width: 991.98px)
 		padding: 15px 4px 130px 60px
 	.title
 		color: $color-black
@@ -2580,7 +2590,7 @@ label
 	.selection
 		display: block
 .select2-container--default .select2-selection--single
-	border-radius: 5px
+	border-radius: 8px
 	.select2-selection__rendered, .select2-selection__placeholder
 		color: $color-gray2
 		line-height: 38px
@@ -2590,7 +2600,7 @@ label
 .select2-container--open 
 	.select2-dropdown
 		border: 1px solid $color-promotion
-		border-radius: 5px
+		border-radius: 8px
 		overflow: hidden
 		top: -38px
 		padding: 0
@@ -2601,7 +2611,7 @@ label
 				border: 0
 				border-bottom: 1px solid $color-promotion
 				color: $color-black
-				border-radius: 5px 5px 0 0
+				border-radius: 8px 8px 0 0
 				padding: 4px 12px
 				height: 38px
 				font-size: 13px
@@ -2850,3 +2860,29 @@ label
 		.dark-mode &
 			border-color: $color-border-dark
 
+.opportunity-calendar
+	.form-control
+		height: 42px
+		font-size: 13px
+		color: $color-sidebar
+		border-radius: 0
+		border: 1px solid $color-promotion
+		&:focus
+			box-shadow: none
+		&:first-child
+			border-radius: 8px 8px 0 0
+		&:last-child
+			border-radius: 0 0 8px 8px
+
+.table-opportunity
+	.tr-total, .tr-subtotal
+		th, td
+			font-weight: bold !important
+			padding-top: 9px
+			padding-bottom: 9px
+	.tr-total 
+		background: #d6d6e2
+	.tr-subtotal 
+		background: #efeff4
+	th, td
+		text-align: left !important

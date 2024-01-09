@@ -2,20 +2,20 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Lumen - Organizations Index</title>
+		<title>Lumen - Opportunity Report</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" type="image/x-icon" href="img/Lumen-dots.png">
 		<link rel="stylesheet" href="libs/Bootstrap/bootstrap-5.3.1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 		<link rel="stylesheet" href="libs/OwlCarousel/OwlCarousel-22.3.4.css">
 		<link rel="stylesheet" href="libs/OwlCarousel/OwlCarousel-22.3.4-owl.theme.css">
-		<link rel="stylesheet" href="libs/Select2/select2.css">
 		<link rel="stylesheet" href="libs/Waves/node-waves-0.7.6.css">
+    <link rel="stylesheet" href="libs/Select2/select2.css">
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	
-	<body class="body-2">
+	<body class="body-2 menubar-pitches3">
 
 	<aside class="sidebar-1">
 		<div class="sidebar-bottom">
@@ -168,6 +168,16 @@
 							<div class="col text-uppercase">Story Watcher</div>
 						</div>
 					</a>
+					<a class="dashboard nav-link link-tablist mt-2 wave active" id="v-pills-opportunity-tab" data-bs-toggle="pill" href="#v-pills-opportunity" aria-controls="v-pills-opportunity" tabindex="0">
+						<div class="row row-1 align-items-center flex-nowrap">
+							<div class="col-auto">
+								<div class="dashboard-box">
+									<img src="img/report-color.webp" class="fz-0" alt="">
+								</div>
+							</div>
+							<div class="col text-uppercase">Opportunity Report</div>
+						</div>
+					</a>
 				</div>
 
 				<div class="accordion accordion-1" id="accordionExample2">
@@ -207,70 +217,77 @@
 
       <div class="tab-pane fade" id="v-pills-pitches" aria-labelledby="v-pills-pitches-tab">
     		<div class="title mb-3">
-	    			<div class="row row-2">
-	    				<div class="col-auto"><img src="img/icon-6.webp" alt="" width="20"></div>
-	    				<div class="col">Pitches</div>
-	    			</div>   			
-	    		</div>
+    			<div class="row row-2">
+    				<div class="col-auto"><img src="img/icon-6.webp" alt="" width="20"></div>
+    				<div class="col">Pitches</div>
+    			</div>   			
+    		</div>
     		<button class="btn btn-primary btn-create wave btn-block mb-3">New Pitch</button>
     		<div class="fz-14 mb-2"><b>Index</b></div>
     		<div class="mb-4">
-	    			<div class="mb-1"><b>Status</b></div>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Submitted</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Resubmitted</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Rejected</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Interview Request</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Lead</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Write</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Edit</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Fact Checking</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Published</span>
-						  <span class="ms-auto">(2)</span>
-						</label>
-	    		</div>
+    			<div class="mb-1"><b>Status</b></div>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Submitted</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Resubmitted</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Rejected</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Interview Request</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Lead</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Write</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Edit</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Fact Checking</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Published</span>
+					  <span class="ms-auto">(2)</span>
+					</label>
+    		</div>
     		<div class="mb-4">
     			<div class="mb-1"><b>Project</b></div>
 					<div class="select-box">
@@ -329,70 +346,70 @@
 
       <div class="tab-pane fade" id="v-pills-storywatcher" aria-labelledby="v-pills-storywatcher-tab">
     		<div class="title mb-3">
-	    			<div class="row row-2">
-	    				<div class="col-auto"><img src="img/icon-29.webp" alt="" width="20"></div>
-	    				<div class="col">Stories</div>
-	    			</div>   			
-	    		</div>
+    			<div class="row row-2">
+    				<div class="col-auto"><img src="img/icon-29.webp" alt="" width="20"></div>
+    				<div class="col">Stories</div>
+    			</div>   			
+    		</div>
     		<button class="btn btn-primary btn-create wave btn-block mb-3">New Story</button>
     		<div class="fz-14 mb-2"><b>Index</b></div>
     		<div class="mb-4">
-	    			<div class="mb-1"><b>Status</b></div>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Submitted</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Resubmitted</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Rejected</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Interview Request</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Lead</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Write</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Edit</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Fact Checking</span>
-						  <span class="ms-auto">(1)</span>
-						</label>
-						<label class="label-store label-small">       
-						  <input type="checkbox" name="status1">
-						  <span class="align-middle f"></span>
-						  <span class="align-middle ms-1">Published</span>
-						  <span class="ms-auto">(2)</span>
-						</label>
-	    		</div>
+    			<div class="mb-1"><b>Status</b></div>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Submitted</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Resubmitted</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Rejected</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Interview Request</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Lead</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Write</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Edit</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Fact Checking</span>
+					  <span class="ms-auto">(1)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Published</span>
+					  <span class="ms-auto">(2)</span>
+					</label>
+    		</div>
     		<div class="mb-4">
     			<div class="mb-1"><b>Project</b></div>
 					<div class="select-box">
@@ -448,7 +465,117 @@
 					</div>
     		</div>
       </div>
-    </div>
+
+      <div class="tab-pane fade show active" id="v-pills-opportunity" aria-labelledby="v-pills-opportunity-tab">
+    		<div class="title mb-3">
+    			<div class="row row-2">
+    				<div class="col-auto"><img src="img/report-color.webp" alt="" width="20"></div>
+    				<div class="col">Opportunity Report</div>
+    			</div>   			
+    		</div>
+    		<div class="mb-4">
+    			<div class="mb-1"><b>Date Range</b></div>
+					<div class="opportunity-calendar">
+				    <input type="text" class="form-control" placeholder="Start Date" name="birthday1">
+				    <input type="text" class="form-control" placeholder="End Date" name="birthday1">
+				  </div>
+    		</div>
+    		<div class="mb-4">
+    			<div class="mb-1"><b>Agency</b></div>
+					<div class="select-box">
+						<select class="select2" data-placeholder="Search or Select">
+							<option></option>
+              <option value="0">Agency A</option>
+              <option value="1">Agency B</option>
+              <option value="2">Agency C</option>
+              <option value="3">Agency D</option>
+              <option value="4">Agency E</option>
+              <option value="5">Agency F</option>
+              <option value="6">Agency G</option>
+              <option value="7">Agency H</option>
+              <option value="8">Agency I</option>
+              <option value="9">Agency J</option>
+						</select>
+					</div>
+    		</div>
+    		<div class="mb-4">
+    			<div class="mb-1"><b>Opportunity</b></div>
+					<div class="select-box">
+						<select class="select2" data-placeholder="Search or Select">
+							<option></option>
+              <option value="0">Opportunity A</option>
+              <option value="1">Opportunity B</option>
+              <option value="2">Opportunity C</option>
+              <option value="3">Opportunity D</option>
+              <option value="4">Opportunity E</option>
+              <option value="5">Opportunity F</option>
+              <option value="6">Opportunity G</option>
+              <option value="7">Opportunity H</option>
+              <option value="8">Opportunity I</option>
+              <option value="9">Opportunity J</option>
+						</select>
+					</div>
+    		</div>
+    		<div class="mb-4">
+    			<div class="mb-1"><b>Project</b></div>
+					<div class="select-box">
+						<select class="select2" data-placeholder="Search or Select">
+							<option></option>
+              <option value="0">Project A</option>
+              <option value="1">Project B</option>
+              <option value="2">Project C</option>
+              <option value="3">Project D</option>
+              <option value="4">Project E</option>
+              <option value="5">Project F</option>
+              <option value="6">Project G</option>
+              <option value="7">Project H</option>
+              <option value="8">Project I</option>
+              <option value="9">Project J</option>
+						</select>
+					</div>
+    		</div>
+    		<div class="mb-4">
+    			<div class="mb-1"><b>Content Type</b></div>
+					<div class="select-box">
+						<select class="select2" data-placeholder="Search or Select">
+							<option></option>
+              <option value="0">Content Type A</option>
+              <option value="1">Content Type B</option>
+              <option value="2">Content Type C</option>
+              <option value="3">Content Type D</option>
+              <option value="4">Content Type E</option>
+              <option value="5">Content Type F</option>
+              <option value="6">Content Type G</option>
+              <option value="7">Content Type H</option>
+              <option value="8">Content Type I</option>
+              <option value="9">Content Type J</option>
+						</select>
+					</div>
+    		</div>
+    		<div class="mb-4">
+    			<div class="mb-1"><b>Opportunity Type</b></div>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Baseline</span>
+					  <span class="ms-auto">(34)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">Partner</span>
+					  <span class="ms-auto">(19)</span>
+					</label>
+					<label class="label-store label-small">       
+					  <input type="checkbox" name="status1">
+					  <span class="align-middle f"></span>
+					  <span class="align-middle ms-1">House</span>
+					  <span class="ms-auto">(23)</span>
+					</label>
+    		</div>
+    		<button class="btn btn-primary btn-create wave btn-block mb-3">Filter</button>
+      </div>
+    </div>	
 	</aside>
 
 	<header class="navbar navbar-light bg-white fixed-top">
@@ -491,293 +618,293 @@
 					    	</div>
 					  	</div>
 					  	<div class="dropdown-2-body">
-									<div class="tab-content">
-										<div class="tab-pane fade show active" id="tab1">
-											<div class="row">
-												<div class="col-6">
-													<div class="text-center font-weight-bold pb-3">Networks</div>
-													<div class="tab-box">
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="1">
-															<span>Project Name #1</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="2">
-															<span>Project Name #2</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="3" checked="">
-															<span>Project Name #3</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="4">
-															<span>Project Name #4</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="5" checked="">
-															<span>Project Name #5</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="6">
-															<span>Project Name #6</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="7">
-															<span>Project Name #7</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="8">
-															<span>Project Name #8</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="9">
-															<span>Project Name #9</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="10">
-															<span>Project Name #10</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="11">
-															<span>Project Name #11</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="12">
-															<span>Project Name #12</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="13">
-															<span>Project Name #13</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="14">
-															<span>Project Name #14</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="15">
-															<span>Project Name #15</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network" value="16">
-															<span>Project Name #16</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-6">
-													<div class="text-center font-weight-bold pb-3">Projects</div>
-													<div class="tab-box">
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="1">
-															<span>Project Name #1</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="2">
-															<span>Project Name #2</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="3">
-															<span>Project Name #3</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="4">
-															<span>Project Name #4</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="5">
-															<span>Project Name #5</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="6" checked="">
-															<span>Project Name #6</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="7">
-															<span>Project Name #7</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="8">
-															<span>Project Name #8</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="9">
-															<span>Project Name #9</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="10">
-															<span>Project Name #10</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="11">
-															<span>Project Name #11</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="12">
-															<span>Project Name #12</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="13">
-															<span>Project Name #13</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="14">
-															<span>Project Name #14</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="15">
-															<span>Project Name #15</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="project" value="16">
-															<span>Project Name #16</span>
-														</label>
-													</div>
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="tab1">
+										<div class="row">
+											<div class="col-6">
+												<div class="text-center font-weight-bold pb-3">Networks</div>
+												<div class="tab-box">
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="1">
+														<span>Project Name #1</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="2">
+														<span>Project Name #2</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="3" checked="">
+														<span>Project Name #3</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="4">
+														<span>Project Name #4</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="5" checked="">
+														<span>Project Name #5</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="6">
+														<span>Project Name #6</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="7">
+														<span>Project Name #7</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="8">
+														<span>Project Name #8</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="9">
+														<span>Project Name #9</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="10">
+														<span>Project Name #10</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="11">
+														<span>Project Name #11</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="12">
+														<span>Project Name #12</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="13">
+														<span>Project Name #13</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="14">
+														<span>Project Name #14</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="15">
+														<span>Project Name #15</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network" value="16">
+														<span>Project Name #16</span>
+													</label>
 												</div>
 											</div>
-										</div>
-										<div class="tab-pane fade" id="tab2">
-											<div class="row">
-												<div class="col-6">
-													<div class="text-center font-weight-bold pb-3">Networks</div>
-													<div class="tab-box">
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="1">
-															<span>Agency Name #1</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="2">
-															<span>Agency Name #2</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="3">
-															<span>Agency Name #3</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="4">
-															<span>Agency Name #4</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="5">
-															<span>Agency Name #5</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="6">
-															<span>Agency Name #6</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="7">
-															<span>Agency Name #7</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="8">
-															<span>Agency Name #8</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="9">
-															<span>Agency Name #9</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="10">
-															<span>Agency Name #10</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="11">
-															<span>Agency Name #11</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="12">
-															<span>Agency Name #12</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="13">
-															<span>Agency Name #13</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="14">
-															<span>Agency Name #14</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="15">
-															<span>Agency Name #15</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="network2" value="16">
-															<span>Agency Name #16</span>
-														</label>
-													</div>
-												</div>
-												<div class="col-6">
-													<div class="text-center font-weight-bold pb-3">Agencies</div>
-													<div class="tab-box">
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="1">
-															<span>Agency Name #1</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="2">
-															<span>Agency Name #2</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="3">
-															<span>Agency Name #3</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="4">
-															<span>Agency Name #4</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="5">
-															<span>Agency Name #5</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="6">
-															<span>Agency Name #6</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="7">
-															<span>Agency Name #7</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="8">
-															<span>Agency Name #8</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="9">
-															<span>Agency Name #9</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="10">
-															<span>Agency Name #10</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="11">
-															<span>Agency Name #11</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="12">
-															<span>Agency Name #12</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="13">
-															<span>Agency Name #13</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="14">
-															<span>Agency Name #14</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="15">
-															<span>Agency Name #15</span>
-														</label>
-														<label class="radio-group">
-															<input type="checkbox" name="agency" value="16">
-															<span>Agency Name #16</span>
-														</label>
-													</div>
+											<div class="col-6">
+												<div class="text-center font-weight-bold pb-3">Projects</div>
+												<div class="tab-box">
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="1">
+														<span>Project Name #1</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="2">
+														<span>Project Name #2</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="3">
+														<span>Project Name #3</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="4">
+														<span>Project Name #4</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="5">
+														<span>Project Name #5</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="6" checked="">
+														<span>Project Name #6</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="7">
+														<span>Project Name #7</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="8">
+														<span>Project Name #8</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="9">
+														<span>Project Name #9</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="10">
+														<span>Project Name #10</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="11">
+														<span>Project Name #11</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="12">
+														<span>Project Name #12</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="13">
+														<span>Project Name #13</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="14">
+														<span>Project Name #14</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="15">
+														<span>Project Name #15</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="project" value="16">
+														<span>Project Name #16</span>
+													</label>
 												</div>
 											</div>
 										</div>
 									</div>
-						  	</div>
+									<div class="tab-pane fade" id="tab2">
+										<div class="row">
+											<div class="col-6">
+												<div class="text-center font-weight-bold pb-3">Networks</div>
+												<div class="tab-box">
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="1">
+														<span>Agency Name #1</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="2">
+														<span>Agency Name #2</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="3">
+														<span>Agency Name #3</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="4">
+														<span>Agency Name #4</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="5">
+														<span>Agency Name #5</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="6">
+														<span>Agency Name #6</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="7">
+														<span>Agency Name #7</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="8">
+														<span>Agency Name #8</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="9">
+														<span>Agency Name #9</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="10">
+														<span>Agency Name #10</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="11">
+														<span>Agency Name #11</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="12">
+														<span>Agency Name #12</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="13">
+														<span>Agency Name #13</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="14">
+														<span>Agency Name #14</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="15">
+														<span>Agency Name #15</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="network2" value="16">
+														<span>Agency Name #16</span>
+													</label>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="text-center font-weight-bold pb-3">Agencies</div>
+												<div class="tab-box">
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="1">
+														<span>Agency Name #1</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="2">
+														<span>Agency Name #2</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="3">
+														<span>Agency Name #3</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="4">
+														<span>Agency Name #4</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="5">
+														<span>Agency Name #5</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="6">
+														<span>Agency Name #6</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="7">
+														<span>Agency Name #7</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="8">
+														<span>Agency Name #8</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="9">
+														<span>Agency Name #9</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="10">
+														<span>Agency Name #10</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="11">
+														<span>Agency Name #11</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="12">
+														<span>Agency Name #12</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="13">
+														<span>Agency Name #13</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="14">
+														<span>Agency Name #14</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="15">
+														<span>Agency Name #15</span>
+													</label>
+													<label class="radio-group">
+														<input type="checkbox" name="agency" value="16">
+														<span>Agency Name #16</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+					  	</div>
 					  </div>
 					</div>
 				</div>
@@ -997,8 +1124,8 @@
 		</button>
 	</header>
 
-		<div class="w-1550">
-			<section class="content d-flex flex-column">
+	<div class="w-1550">
+		<section class="content d-flex flex-column">
 			<div class="row section-search d-xl-none">
 				<div class="col-12 col-md-auto mb-3 mb-md-0">
 					<div class="dropdown dropdown-2">
@@ -1497,215 +1624,100 @@
 			    </div>				
 				</div>
 			</div>
-				<div class="row justify-content-center">
-					<div class="col-9 col-sm-6 col-md-4 col-xl-24">
-						<div class="cart cart-content text-center lh-12 wave">
-							<div class="click-slide abs"></div>
-							<div class="fz-13 text-uppercase red font-weight-bold">Audience</div>
-							<div class="owl-1 owl-carousel owl-theme">
-								<div class="pb-1">
-									<div class="fz-30 font-weight-bold">58,453</div>
-									<div>Identified Pageviews</div>
-								</div>
-								<div class="pb-1">
-									<div class="fz-30 font-weight-bold">58,453</div>
-									<div>Unidentified Pageviews</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-9 col-sm-6 col-md-4 col-xl-24">
-						<div class="cart cart-content cart-content-3 text-white text-center lh-12 wave">
-							<div class="click-slide abs"></div>
-							<div class="fz-13 text-uppercase font-weight-bold carousel-name-3">Influencers</div>
-							<div class="owl-1 owl-carousel owl-theme">
-								<div class="pb-1">
-									<div class="fz-30 font-weight-bold">5,489</div>
-									<div>Identified</div>
-								</div>
-								<div class="pb-1">
-									<div class="fz-30 font-weight-bold">5,489</div>
-									<div>Unidentified</div>
+			<div class="row">
+				<div class="col-xl-3">
+					<div class="row">
+						<div class="col-sm-6 col-xl-12">
+							<div class="cart cart-content text-center lh-12 wave">
+								<div class="click-slide abs"></div>
+								<div class="fz-13 text-uppercase green font-weight-bold">Total Revenue</div>
+								<div class="owl-1 owl-carousel owl-theme owl-dots-big owl-green">
+									<div class="py-2">
+										<div class="fz-30 font-weight-bold pb-2">$19,837.61</div>
+										<div class="pb-2 red">+42%</div>
+										<div>Budget = $13,969.97</div>
+									</div>
+									<div class="py-2">
+										<div class="fz-30 font-weight-bold pb-2">$59,837.61</div>
+										<div class="pb-2 red">+42%</div>
+										<div>Budget = $13,969.97</div>
+									</div>
+									<div class="py-2">
+										<div class="fz-30 font-weight-bold pb-2">$39,837.61</div>
+										<div class="pb-2 red">+42%</div>
+										<div>Budget = $13,969.97</div>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-9 col-sm-6 col-md-4 col-xl-24">
-						<div class="cart cart-content text-center lh-12 wave">
-							<div class="click-slide abs"></div>
-							<div class="fz-13 text-uppercase orange font-weight-bold carousel-name-4">Types & Categories</div>
-							<div class="owl-1 owl-carousel owl-theme">
-								<div class="pb-1">
-									<div class="fz-30 font-weight-bold">25</div>
-									<div>Total Types</div>
-								</div>
-								<div class="pb-1">
-									<div class="fz-30 font-weight-bold">25</div>
-									<div>Total Categories</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-9 col-sm-6 col-md-4 col-xl-24">
-						<div class="cart cart-content text-center lh-12 wave">
-							<div class="click-slide abs"></div>
-							<div class="fz-13 text-uppercase orange font-weight-bold carousel-name-2">Frequent Types</div>
-							<div class="owl-1 owl-carousel owl-theme">
-								<div class="pb-1">
-									<div class="fz-18 py-2 font-weight-bold">US Government</div>
-									<div>Most Frequent Type</div>
-								</div>
-								<div class="pb-1">
-									<div class="fz-18 py-2 font-weight-bold">State Government</div>
-									<div>2nd Most Frequent Type</div>
-								</div>
-								<div class="pb-1">
-									<div class="fz-18 py-2 font-weight-bold">Local Government</div>
-									<div>3rd Most Frequent Type</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-9 col-sm-6 col-md-4 col-xl-24">
-						<div class="cart cart-content text-center lh-12 wave">
-							<div class="click-slide abs"></div>
-							<div class="fz-13 text-uppercase orange font-weight-bold">Frequent Categories</div>
-							<div class="owl-1 owl-carousel owl-theme">
-								<div class="pb-1">
-									<div class="fz-18 py-2 font-weight-bold">US State Department</div>
-									<div>Most Frequent Category</div>
-								</div>
-								<div class="pb-1">
-									<div class="fz-18 py-2 font-weight-bold">County Governments</div>
-									<div>2nd Most Frequent Category</div>
-								</div>
-								<div class="pb-1">
-									<div class="fz-18 py-2 font-weight-bold">Law Firms</div>
-									<div>3rd Most Frequent Category</div>
+						<div class="col-sm-6 col-xl-12">
+							<div class="cart cart-content text-center lh-12 wave">
+								<div class="click-slide abs"></div>
+								<div class="fz-13 text-uppercase red font-weight-bold">Story Production</div>
+								<div class="owl-1 owl-carousel owl-theme owl-dots-big owl-red">
+									<div class="py-2">
+										<div class="fz-30 font-weight-bold pb-2">323</div>
+										<div class="pb-2"></div>
+										<div>Total Stories</div>
+									</div>
+									<div class="py-2">
+										<div class="fz-30 font-weight-bold pb-2">324</div>
+										<div class="pb-2"></div>
+										<div>Total Stories</div>
+									</div>
+									<div class="py-2">
+										<div class="fz-30 font-weight-bold pb-2">325</div>
+										<div class="pb-2"></div>
+										<div>Total Stories</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="cart cart-content">
-					<div class="row align-items-center">
-						<div class="col">
-							<div class="fz-13 text-uppercase font-weight-bold">AUDIENCE PAGEVIEWS</div>
-						</div>
-						<div class="col-auto d-flex align-items-center">
-							<a href="#collapse-graph" class="fas fas-2 fas-4 fa-window-minimize" data-toggle="collapse"></a>
-						</div>
-					</div>
-					<div class="collapse show" id="collapse-graph">
-						<div class="canvas-wrap canvas-wrap-3">
-							<canvas id="canvas">
+				<div class="col-xl">
+					<div class="cart cart-content">
+						<div class="fz-13 text-uppercase font-weight-bold mb-2">Story Production</div>
+						<div class="canvas-wrap">
+							<canvas id="canvas3">
 								<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 								<script>
 
-									var chartVars = {
-									  gradientStart: 'rgba(233, 233, 237, 1)',
-									  gradientStop: 'rgba(233, 233, 237, 0)',
-									  fontColor: '#222222',
-									  gridLine: '#dedede',
-									  tooltipBg: 'rgba(248, 248, 248, 0.6)',
-									  tooltipBorder: 'rgba(242, 242, 242, 0.5)',
-									};
+									function lightModeChart() {};
+									function darkModeChart() {};
 
-									function lightModeChart() {
-									  Chart.defaults.global.defaultFontColor = chartVars.fontColor;
-									  chartInstance.data = data;
-									  chartInstance.options = options;
-									  chartInstance.update();
-									};
+									var chart3 = document.getElementById('canvas3').getContext('2d');
 
-									function darkModeChart() {
-									  var gradientDark = chart.createLinearGradient(0, 0, 0, 320),
-									      dataDark = $.extend(true, {}, data),
-									      optionsDark = $.extend(true, {}, options);
-									  Chart.defaults.global.defaultFontColor = '#fff';
-									  gradientDark.addColorStop(0, 'rgba(0, 0, 0, 1)');
-									  gradientDark.addColorStop(1, 'rgba(0, 0, 0, 0)');
-									  dataDark.datasets[0].backgroundColor = gradientDark;
-									  optionsDark.scales.yAxes[0].gridLines.color = '#313943';
-									  optionsDark.tooltips.backgroundColor = 'rgba(0, 0, 0, .5)';
-									  optionsDark.tooltips.titleFontColor = '#fff';
-									  optionsDark.tooltips.bodyFontColor = '#fff';
-									  optionsDark.tooltips.borderColor = 'rgba(0, 0, 0, .5)';
-									  chartInstance.data = dataDark;
-									  chartInstance.options = optionsDark;
-									  chartInstance.update();
-									};
-
-									const ShadowLineElement = Chart.elements.Line.extend({
-									  draw () {   
-									    const { ctx } = this._chart
-									    const originalStroke = ctx.stroke
-									    ctx.stroke = function () {
-									      ctx.save()
-									      ctx.shadowOffsetX = 0
-									      ctx.shadowOffsetY = 1
-									      ctx.shadowBlur = 2
-									      ctx.shadowColor = 'rgba(0, 0, 0, .35)'
-									      originalStroke.apply(this, arguments)
-									      ctx.restore()
-									    }
-									    Chart.elements.Line.prototype.draw.apply(this, arguments);
-									    ctx.stroke = originalStroke;
-									  }
-									})
-
-									Chart.defaults.ShadowLine = Chart.defaults.line
-									Chart.controllers.ShadowLine = Chart.controllers.line.extend({
-									  datasetElementType: ShadowLineElement
-									})
-
-									var chart = document.getElementById('canvas').getContext('2d'),
-									    gradient = chart.createLinearGradient(0, 0, 0, 320),
-									    gradient2 = chart.createLinearGradient(0, 0, 0, 280);
-
-									gradient.addColorStop(0, chartVars.gradientStart);
-									gradient.addColorStop(1, chartVars.gradientStop);
-
-									gradient2.addColorStop(0, '#fb5d46');
-									gradient2.addColorStop(0.25, '#fca033');
-									gradient2.addColorStop(0.5, '#f8d217');
-									gradient2.addColorStop(0.75, '#4afd3b');
-									gradient2.addColorStop(1, '#02d79c');
-
-									Chart.defaults.global.defaultFontColor = chartVars.fontColor;
+									Chart.defaults.global.defaultFontColor = '#b9b9b9';
 									Chart.defaults.global.defaultFontFamily = '"Roboto", sans-serif';
-									Chart.defaults.global.defaultFontSize = 10;
 									Chart.defaults.global.defaultFontStyle = 'bold';
 
-									var labels = ["May 12", "May 13", "May 14", "May 15", "May 16", "May 17", "May 18", "May 19", "May 20", "May 21", "May 22", "May 23", "May 24", "May 25", "May 26", "May 27", "May 28", "May 29", "May 30", "May 31", "Jun 1", "Jun 2", "Jun 3", "Jun 4", "Jun 5", "Jun 6", "Jun 7", "Jun 8", "Jun 9", "Jun 10", "Jun 11"];
-									var data  = {
+									var labels = ["Nov 4", "Nov 5", "Nov 6", "Nov 7", "Nov 8", "Nov 9", "Nov 10", "Nov 11", "Nov 12", "Nov 13", "Nov 14", "Nov 15", "Nov 16", "Nov 17", "Nov 18", "Nov 19", "Nov 20", "Nov 21", "Nov 22", "Nov 23", "Nov 24", "Nov 25", "Nov 26", "Nov 27", "Nov 28", "Nov 29", "Nov 30", "Dec 1", "Dec 2", "Dec 3", "Dec 4", "Dec 5", "Dec 6", "Dec 7", "Dec 8"];
+
+									var data3  = {
 									    labels: labels,
 									    datasets: [{
-								      label: 'Aud',
-								      backgroundColor: gradient,
-								      borderWidth: 5,
-								      pointRadius: 10,
-								      pointBorderWidth: 3,
-								      pointBorderColor: 'transparent',
-								      pointBackgroundColor: 'transparent',
-								      pointHoverRadius: 8,
-								      pointHoverBorderWidth: 4,
-								      pointHoverBorderColor: '#FFF',
-								      hitRadius: 15,
-								      pointHoverBackgroundColor: '#fb5d46',
-								      borderColor: gradient2,
-									      data: [7, 7.5, 4.8, 6, 7.7, 6, 6.2, 5.7, 7.4, 7.7, 10, 12.678, 8.5, 7.5, 9, 8.8, 10.2, 0.7, 0.6, 2.5, 7.5, 8, 7.2, 13, 10.5, 11.3, 12.2, 12.2, 14, 13, 13],
+									    	label: 'Stories',
+												borderWidth: 3, 
+												fill: false,
+												borderColor: '#2774e9',
+												pointRadius: 5,
+												pointBackgroundColor: '#FFF',
+												pointHoverRadius: 8,
+												pointHoverBorderWidth: 2,
+												pointHoverBackgroundColor: '#FFF',
+												tension: 0,
+												data: [97, 87, 80, 80, 70, 68, 70, 68, 78, 81, 72, 60, 60, 55, 60, 72, 75, 70, 70, 87, 90, 84, 96, 100, 88, 79, 70, 67, 70, 70, 67, 79, 82, 89, 80],
 									    }]
 									};
 
-									var options = {
-									  maintainAspectRatio: false,
-									  scales: {
-
-									    xAxes: [{
-									      ticks: {
-									        padding: 10,
+									var options3 = {
+										maintainAspectRatio: false,
+										scales: {
+											xAxes: [{
+												ticks: {
+													fontSize: 10,
+                    			padding: 10,
 									        userCallback: function(tick) {
 									          switch(tick) {
 									            case labels[0]:
@@ -1718,65 +1730,64 @@
 									              return;
 									          };
 									        },
-									      },
-									      gridLines: {
+						            },
+												gridLines: {
 									        display: false,
 									        drawTicks: false,
 									        drawBorder: false,
+												}
+											}],
+											yAxes: [{
+												display: true,
+												ticks: {
+													fontSize: 10,
+					                max: 100,
+					                min: 25,
+					                stepSize: 25,
+                    			padding: 10,
+						            },
+												gridLines: {
+													color: '#dedede',
+													drawTicks: false,
+													drawBorder: false,
+													borderDash: [10,1],
+													zeroLineColor: '#dedede',
+												},
+											}]
+										},
+										legend: {
+											display: false
+										},
 
-									      }
-									    }],
 
-									    yAxes: [{
-									      display: true,
-									      // type: 'logarithmic',
-									      ticks: {
-									        max: 15,
-									        min: 0,
-									        stepSize: 5,
-									        padding: 10,
-									        userCallback: function(tick) {
-									          return tick.toString() + 'k';
-									        },
-									      },
-									      gridLines: {
-									        color: chartVars.gridLine,
-									        drawTicks: false,
-									        drawBorder: false,
-									      }
-									    }]
-
-									  },
-									  legend: {
-									    display: false
-									  },
-
-									  tooltips: {
-									    position: 'average',
-									    mode: 'index',
-									    intersect: false,
+										tooltips: {
+											position: 'nearest',
+											mode: 'index',
+											intersect: false,
 									    displayColors: false,
 									    titleAlign: "center",
 									    bodyAlign: "center",
-									    yPadding: 10,
-									    xPadding: 10,
-									    caretSize: 0,
-									    caretPadding: 20,
+											yPadding: 10,
+											xPadding: 10,
+											caretSize: 8,
+											caretPadding: 20,
 									    titleFontStyle: 'normal',
 									    bodyFontStyle: 'bold',
-									    borderWidth: 2,
-									    cornerRadius: 4,
-									    backgroundColor: chartVars.tooltipBg,
-									    titleFontColor: chartVars.fontColor,
-									    bodyFontColor: chartVars.fontColor,
-									    borderColor: chartVars.tooltipBorder
-									  },
+											backgroundColor: 'rgba(255, 255, 255, 1)',
+											titleFontColor: '#222222',
+											bodyFontColor: '#222222',
+											borderColor: 'rgba(242, 242, 242, 1)',
+											borderWidth: 2,
+											cornerRadius: 4,
+											titleSpacing: 4,
+											fontSize: 13,
+										},
 									};
 
-									var chartInstance = new Chart(chart, {
-									  type: 'ShadowLine',
-									  data: data,
-									  options: options
+									var chartInstance = new Chart(chart3, {
+								    type: 'line',
+								    data: data3,
+										options: options3
 									});
 
 								</script>
@@ -1784,266 +1795,505 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="cart flex-grow-1">
-					<div class="cart-content pb-0">
-						<div class="fz-13 text-uppercase font-weight-bold">Influencers</div>
-					</div>
-
-					<div class="block">
-						<div class="block font-weight-bold">
-							<div class="row align-items-center">
-								<div class="col lh-12 align-items-center">Influencer</div>
-								<div class="col-auto">Pageviews</div>
-							</div>
+			</div>
+			<div class="cart h-auto overflow-hidden">
+				<div class="cart-content pb-0">
+					<div class="row align-items-center">
+						<div class="col-sm mb-1 mb-sm-0">
+							<div class="fz-13 text-uppercase font-weight-bold">Opportunity Report Summary</div>
 						</div>
-						<div class="block border-0">
+						<div class="col-sm-auto">
 							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-10.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">State Farm Insurance
-									</div>
+								<div class="col-sm-auto mb-1 mb-sm-0">Index by</div>
+								<div class="col-sm-auto mb-1 mb-sm-0">
+									<label class="label-store mb-0">       
+										<input type="radio" name="opportunity1" checked="">
+										<span class="align-middle f"></span>
+										<span class="align-middle ms-1">Opportunity Breakout</span>
+								  </label>
 								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,332</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-11.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Reed, Armstrong, Morrissey & Johnson
-									</div>
+								<div class="col-sm-auto">
+									<label class="label-store mb-0">       
+										<input type="radio" name="opportunity1">
+										<span class="align-middle f"></span>
+										<span class="align-middle ms-1">Agency Rollup</span>
+								  </label>
 								</div>
-								<div class="col-auto fz-18 font-weight-bold">451</div>
 							</div>
 						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-12.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Dori, Julian & Associates PC
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">417</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-10.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">State Farm Insurance
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-11.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Reed, Armstrong, Morrissey & Johnson
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">417</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-12.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Dori, Julian & Associates PC
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-10.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">State Farm Insurance
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">417</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-11.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Reed, Armstrong, Morrissey & Johnson
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-12.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Dori, Julian & Associates PC
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">417</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-10.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">State Farm Insurance
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-11.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Reed, Armstrong, Morrissey & Johnson
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-12.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Dori, Julian & Associates PC
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">417</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-10.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">State Farm Insurance
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-11.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Reed, Armstrong, Morrissey & Johnson
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-12.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">Dori, Julian & Associates PC
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">417</div>
-							</div>
-						</div>
-						<div class="block">
-							<div class="row align-items-center">
-								<div class="col row row-1 lh-12 align-items-center">
-									<div class="col-auto">
-										<img src="img/icon-10.webp" class="br-100 fz-0" alt="" width="26">
-									</div>
-									<div class="col">State Farm Insurance
-									</div>
-								</div>
-								<div class="col-auto fz-18 font-weight-bold">2,322</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row justify-content-end">
-						<div class="col-auto">
-							<label class="switch-wrap font-weight-bold pe-2 me-1">
-								<span>Identified/Unidentified Influencers</span>
-								<input type="checkbox" id="sidebar-switcher">
-								<span class="lever"></span>
-							</label>
-						</div>
-					</div>
-
-					<div class="row align-items-center justify-content-center font-weight-bold my-4 pb-3">
-						<div class="col-6 col-lg">
-							<div class="px-2 mx-1 fz-13">
-								<form class="form-inline form-inline-1">
-								  <label class="mb-0" for="inputState">Show</label>
-								  <select class="form-select w-auto ms-2" id="inputState">
-								    <option selected>25</option>
-								    <option value="1">26</option>
-								    <option value="2">27</option>
-								    <option value="3">28</option>
-								  </select>
-								</form>
-							</div>
-						</div>
-						<div class="col-6 col-lg-auto text-right">
-							<div class="px-2 mx-1">1-25 of 525</div>
-						</div>
-						<div class="col mt-4 mt-lg-0">   
-							<div class="px-2 mx-1 fz-13">   
-								<ul class="pagination mb-0 justify-content-center justify-content-lg-end">
-					        <li class="page-item">
-					          <a class="page-link" href="#!">
-					            <span>&laquo;</span>
-					          </a>
-					        </li>
-					        <li class="page-item"><a class="page-link" href="#!">1</a></li>
-					        <li class="page-item"><a class="page-link" href="#!">2</a></li>
-					        <li class="page-item"><a class="page-link" href="#!">...</a></li>
-					        <li class="page-item"><a class="page-link" href="#!">524</a></li>
-					        <li class="page-item"><a class="page-link" href="#!">525</a></li>
-					        <li class="page-item">
-					          <a class="page-link" href="#!">
-					            <span>&raquo;</span>
-					          </a>
-					        </li>
-					      </ul>
-				      </div>
-	    			</div>
 					</div>
 				</div>
-			</section>
-		</div>
-		
+				<div class="pe-2">
+					<div class="table-responsive scroll scroll-table">
+						<table class="table table-2 table-pitches table-opportunity table-borderless mt-3 mb-0">
+							<thead>
+								<tr>
+									<th>Agency</th>
+									<th>Opportunity</th>
+									<th>Opportunity Type</th>
+									<th>Revenue</th>
+									<th>Budget</th>
+									<th>Difference</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Agency A</th>
+									<td>Opportunity A</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$1,000.00</td>
+									<td>$750.00</td>
+									<td class="red">($250)/33%</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity B</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$500.00</td>
+									<td>$750.00</td>
+									<td class="green">$250/33%</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity B</td>
+									<td><div class="status status-partner">Partner</div></td>
+									<td>$500.00</td>
+									<td>$750.00</td>
+									<td class="green">$250/33%</td>
+								</tr>
+								<tr class="tr-total">
+									<th>Agency A Total</th>
+									<td></td>
+									<td></td>
+									<td>$2,000.00</td>
+									<td>$2,250.00</td>
+									<td class="green">$250/11%</td>
+								</tr>
+								<tr>
+									<th>Agency B</th>
+									<td>Opportunity 1</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$5,000.00</td>
+									<td>$4,000.00</td>
+									<td class="red">($1,000)/33%</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity 2</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$1,000.00</td>
+									<td>$1,500.00</td>
+									<td class="green">$500/50%</td>
+								</tr>
+								<tr class="tr-total">
+									<th>Agency B Total</th>
+									<td></td>
+									<td></td>
+									<td>$6,000.00</td>
+									<td>$5,500.00</td>
+									<td class="red">($500)/9%</td>
+								</tr>
+								<tr>
+									<th>Agency c</th>
+									<td>Opportunity A</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$1,000.00</td>
+									<td>$750.00</td>
+									<td class="red">($250)/33%</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity B</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$500.00</td>
+									<td>$750.00</td>
+									<td class="green">$250/33%</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity B</td>
+									<td><div class="status status-partner">Partner</div></td>
+									<td>$500.00</td>
+									<td>$750.00</td>
+									<td class="green">$250/33%</td>
+								</tr>
+								<tr class="tr-total">
+									<th>Agency C Total</th>
+									<td></td>
+									<td></td>
+									<td>$2,000.00</td>
+									<td>$2,250.00</td>
+									<td class="green">$250/11%</td>
+								</tr>
+								<tr>
+									<th>Agency D</th>
+									<td>Opportunity 1</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$5,000.00</td>
+									<td>$4,000.00</td>
+									<td class="red">($1,000)/33%</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity 2</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>$1,000.00</td>
+									<td>$1,500.00</td>
+									<td class="green">$500/50%</td>
+								</tr>
+								<tr class="tr-total">
+									<th>Agency D Total</th>
+									<td></td>
+									<td></td>
+									<td>$6,000.00</td>
+									<td>$5,500.00</td>
+									<td class="red">($500)/9%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="cart h-auto overflow-hidden">
+				<div class="cart-content pb-0">
+					<div class="row align-items-center">
+						<div class="col-sm mb-1 mb-sm-0">
+							<div class="fz-13 text-uppercase font-weight-bold">Opportunity Report Details</div>
+						</div>
+					</div>
+				</div>
+				<div class="pe-2">
+					<div class="table-responsive scroll scroll-table">
+						<table class="table table-2 table-pitches table-opportunity table-borderless mt-3 mb-0">
+							<thead>
+								<tr>
+									<th>Agency</th>
+									<th>Opportunity</th>
+									<th>Opportunity Type</th>
+									<th>Project</th>
+									<th>Content Type</th>
+									<th>Stories</th>
+									<th>Revenue</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Agency A</th>
+									<td>Opportunity A</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>Project A</td>
+									<td>Content Type A</td>
+									<td>5</td>
+									<td>$75.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type B</td>
+									<td>5</td>
+									<td>$100.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td>Project B</td>
+									<td>Content Type A</td>
+									<td>5</td>
+									<td>$20.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type B</td>
+									<td>10</td>
+									<td>$10.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type C</td>
+									<td>5</td>
+									<td>$300.00</td>
+								</tr>
+								<tr class="tr-subtotal">
+									<th>Agency A</th>
+									<td>Opportunity A Subtotal</td>
+									<td>Baseline</td>
+									<td></td>
+									<td></td>
+									<td>30</td>
+									<td>$505.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity B</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>Project C</td>
+									<td>Content Type A</td>
+									<td>10</td>
+									<td>$100.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type B</td>
+									<td>10</td>
+									<td>$200.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type C</td>
+									<td>50</td>
+									<td>$500.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type D</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type E</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type F</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type G</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type H</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr class="tr-subtotal">
+									<th>Agency A</th>
+									<td>Opportunity B Subtotal</td>
+									<td>Baseline</td>
+									<td></td>
+									<td></td>
+									<td>80</td>
+									<td>$850.00</td>
+								</tr>
+								<tr class="tr-total">
+									<th>Agency A Totals</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>440</td>
+									<td>$2,950.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="cart h-auto overflow-hidden">
+				<div class="pe-2">
+					<div class="table-responsive scroll scroll-table">
+						<table class="table table-2 table-pitches table-opportunity table-borderless mt-3 mb-0">
+							<thead>
+								<tr>
+									<th>Agency</th>
+									<th>Opportunity</th>
+									<th>Opportunity Type</th>
+									<th>Project</th>
+									<th>Content Type</th>
+									<th>Stories</th>
+									<th>Revenue</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Agency B</th>
+									<td>Opportunity A</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>Project A</td>
+									<td>Content Type A</td>
+									<td>5</td>
+									<td>$75.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type B</td>
+									<td>5</td>
+									<td>$100.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td>Project B</td>
+									<td>Content Type A</td>
+									<td>5</td>
+									<td>$20.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type B</td>
+									<td>10</td>
+									<td>$10.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type C</td>
+									<td>5</td>
+									<td>$300.00</td>
+								</tr>
+								<tr class="tr-subtotal">
+									<th>Agency B</th>
+									<td>Opportunity A Subtotal</td>
+									<td>Baseline</td>
+									<td></td>
+									<td></td>
+									<td>30</td>
+									<td>$505.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td>Opportunity B</td>
+									<td><div class="status status-baseline">Baseline</div></td>
+									<td>Project C</td>
+									<td>Content Type A</td>
+									<td>10</td>
+									<td>$100.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type B</td>
+									<td>10</td>
+									<td>$200.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type C</td>
+									<td>50</td>
+									<td>$500.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type D</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type E</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type F</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type G</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr>
+									<th></th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>Content Type H</td>
+									<td>10</td>
+									<td>$50.00</td>
+								</tr>
+								<tr class="tr-subtotal">
+									<th>Agency B</th>
+									<td>Opportunity B Subtotal</td>
+									<td>Baseline</td>
+									<td></td>
+									<td></td>
+									<td>80</td>
+									<td>$850.00</td>
+								</tr>
+								<tr class="tr-total">
+									<th>Agency B Totals</th>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>440</td>
+									<td>$2,950.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
 		<script src="libs/Jquery/jquery-3.3.1.js"></script>
 		<script src="libs/Popper/popper.js-2.11.8.js"></script>
 		<script src="libs/Bootstrap/bootstrap-5.3.1.js"></script>

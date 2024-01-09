@@ -13,6 +13,7 @@ owl1.owlCarousel({
   smartSpeed: 1200,
   touchDrag: false,
   mouseDrag: false,
+  margin: 40,
   loop: true,
 });
 
@@ -84,11 +85,16 @@ $(".sidebar-1").hover(function(){
 });
 
 $("#v-pills-pitches-tab").on("click", function() {
-  $("body").toggleClass("menubar-pitches").removeClass("menubar-pitches2");
+  $("body").toggleClass("menubar-pitches").removeClass("menubar-pitches2 menubar-pitches3");
 });
 $("#v-pills-storywatcher-tab").on("click", function() {
-  $("body").toggleClass("menubar-pitches2").removeClass("menubar-pitches");
+  $("body").toggleClass("menubar-pitches2").removeClass("menubar-pitches menubar-pitches3");
 });
+$("#v-pills-opportunity-tab").on("click", function() {
+  $("body").toggleClass("menubar-pitches3").removeClass("menubar-pitches menubar-pitches2");
+});
+
+// SECOND METHOD
 
 // $(".link-tablist").on("click", function() {
 //   if ($(this).hasClass("active")) {
