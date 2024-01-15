@@ -2874,6 +2874,7 @@ label
 		&:first-child
 			border-radius: 8px 8px 0 0
 		&:last-child
+			border-top: 0px
 			border-radius: 0 0 8px 8px
 
 .table-opportunity
@@ -2888,3 +2889,41 @@ label
 		background: #efeff4
 	th, td
 		text-align: left !important
+
+.tabs-opportunity
+	border: 0
+	@media (max-width: 575.98px)
+		display: inline-block
+	.nav-link
+		border: 0
+		color: $color-body
+		background: transparent
+		padding: 0 
+		margin: 0 10px
+		@media (max-width: 575.98px)
+			margin: 4px 0
+		&:hover
+			opacity: 1
+		.f 
+			display: inline-block
+			width: 18px
+			height: 18px
+			border: 1px solid #a6aeb5
+			border-radius: 100px
+			position: relative
+			margin-right: 2px
+		&.active
+			.f 
+				transition: $transition
+				background: $color-checkbox
+				border-color: $color-checkbox
+				&:before 
+					content: ""
+					width: 7px
+					height: 7px
+					position: absolute
+					background: $color-white
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					border-radius: 100px

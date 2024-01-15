@@ -2796,6 +2796,7 @@ label {
   .opportunity-calendar .form-control:first-child {
     border-radius: 8px 8px 0 0; }
   .opportunity-calendar .form-control:last-child {
+    border-top: 0px;
     border-radius: 0 0 8px 8px; }
 
 .table-opportunity .tr-total th, .table-opportunity .tr-total td, .table-opportunity .tr-subtotal th, .table-opportunity .tr-subtotal td {
@@ -2808,5 +2809,44 @@ label {
   background: #efeff4; }
 .table-opportunity th, .table-opportunity td {
   text-align: left !important; }
+
+.tabs-opportunity {
+  border: 0; }
+  @media (max-width: 575.98px) {
+    .tabs-opportunity {
+      display: inline-block; } }
+  .tabs-opportunity .nav-link {
+    border: 0;
+    color: #222222;
+    background: transparent;
+    padding: 0;
+    margin: 0 10px; }
+    @media (max-width: 575.98px) {
+      .tabs-opportunity .nav-link {
+        margin: 4px 0; } }
+    .tabs-opportunity .nav-link:hover {
+      opacity: 1; }
+    .tabs-opportunity .nav-link .f {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #a6aeb5;
+      border-radius: 100px;
+      position: relative;
+      margin-right: 2px; }
+    .tabs-opportunity .nav-link.active .f {
+      transition: 0.3s;
+      background: #0081ff;
+      border-color: #0081ff; }
+      .tabs-opportunity .nav-link.active .f:before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        background: #FFF;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100px; }
 
 /*# sourceMappingURL=style.css.map */

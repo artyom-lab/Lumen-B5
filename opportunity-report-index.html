@@ -1804,153 +1804,125 @@
 						</div>
 						<div class="col-sm-auto">
 							<div class="row align-items-center">
-								<div class="col-sm-auto mb-1 mb-sm-0">Index by</div>
-								<div class="col-sm-auto mb-1 mb-sm-0">
-									<label class="label-store mb-0">       
-										<input type="radio" name="opportunity1" checked="">
-										<span class="align-middle f"></span>
-										<span class="align-middle ms-1">Opportunity Breakout</span>
-								  </label>
-								</div>
+								<div class="col-sm-auto mb-1 mb-sm-0">Index by:</div>
 								<div class="col-sm-auto">
-									<label class="label-store mb-0">       
-										<input type="radio" name="opportunity1">
-										<span class="align-middle f"></span>
-										<span class="align-middle ms-1">Agency Rollup</span>
-								  </label>
-								</div>
+									<div class="nav nav-tabs tabs-opportunity">
+		                <a class="nav-link active" data-bs-toggle="tab" href="#opp1">
+		                	<span class="align-middle f"></span>
+		                	<span class="align-middle">Opportunity Breakout</span>
+		                </a>
+		                <a class="nav-link" data-bs-toggle="tab" href="#opp2">
+		                	<span class="align-middle f"></span>
+		                	<span class="align-middle">Agency Rollup</span>
+		                </a>
+		              </div>
+								</div>	
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="pe-2">
-					<div class="table-responsive scroll scroll-table">
-						<table class="table table-2 table-pitches table-opportunity table-borderless mt-3 mb-0">
-							<thead>
-								<tr>
-									<th>Agency</th>
-									<th>Opportunity</th>
-									<th>Opportunity Type</th>
-									<th>Revenue</th>
-									<th>Budget</th>
-									<th>Difference</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>Agency A</th>
-									<td>Opportunity A</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$1,000.00</td>
-									<td>$750.00</td>
-									<td class="red">($250)/33%</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity B</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$500.00</td>
-									<td>$750.00</td>
-									<td class="green">$250/33%</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity B</td>
-									<td><div class="status status-partner">Partner</div></td>
-									<td>$500.00</td>
-									<td>$750.00</td>
-									<td class="green">$250/33%</td>
-								</tr>
-								<tr class="tr-total">
-									<th>Agency A Total</th>
-									<td></td>
-									<td></td>
-									<td>$2,000.00</td>
-									<td>$2,250.00</td>
-									<td class="green">$250/11%</td>
-								</tr>
-								<tr>
-									<th>Agency B</th>
-									<td>Opportunity 1</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$5,000.00</td>
-									<td>$4,000.00</td>
-									<td class="red">($1,000)/33%</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity 2</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$1,000.00</td>
-									<td>$1,500.00</td>
-									<td class="green">$500/50%</td>
-								</tr>
-								<tr class="tr-total">
-									<th>Agency B Total</th>
-									<td></td>
-									<td></td>
-									<td>$6,000.00</td>
-									<td>$5,500.00</td>
-									<td class="red">($500)/9%</td>
-								</tr>
-								<tr>
-									<th>Agency c</th>
-									<td>Opportunity A</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$1,000.00</td>
-									<td>$750.00</td>
-									<td class="red">($250)/33%</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity B</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$500.00</td>
-									<td>$750.00</td>
-									<td class="green">$250/33%</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity B</td>
-									<td><div class="status status-partner">Partner</div></td>
-									<td>$500.00</td>
-									<td>$750.00</td>
-									<td class="green">$250/33%</td>
-								</tr>
-								<tr class="tr-total">
-									<th>Agency C Total</th>
-									<td></td>
-									<td></td>
-									<td>$2,000.00</td>
-									<td>$2,250.00</td>
-									<td class="green">$250/11%</td>
-								</tr>
-								<tr>
-									<th>Agency D</th>
-									<td>Opportunity 1</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$5,000.00</td>
-									<td>$4,000.00</td>
-									<td class="red">($1,000)/33%</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity 2</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>$1,000.00</td>
-									<td>$1,500.00</td>
-									<td class="green">$500/50%</td>
-								</tr>
-								<tr class="tr-total">
-									<th>Agency D Total</th>
-									<td></td>
-									<td></td>
-									<td>$6,000.00</td>
-									<td>$5,500.00</td>
-									<td class="red">($500)/9%</td>
-								</tr>
-							</tbody>
-						</table>
+				<div class="tab-content">
+					<div class="tab-pane fade active show" id="opp1">
+						<div class="table-responsive">
+							<table class="table table-2 table-pitches table-opportunity table-borderless table-hover mt-3 mb-0">
+								<thead>
+									<tr>
+										<th>Agency</th>
+										<th>Opportunity</th>
+										<th>Opportunity Type</th>
+										<th>Revenue</th>
+										<th>Budget</th>
+										<th>Difference</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Agency A</th>
+										<td>Opportunity A</td>
+										<td><div class="status status-baseline">Baseline</div></td>
+										<td>$1,000.00</td>
+										<td>$750.00</td>
+										<td class="red">($250)/33%</td>
+									</tr>
+									<tr>
+										<th></th>
+										<td>Opportunity B</td>
+										<td><div class="status status-baseline">Baseline</div></td>
+										<td>$500.00</td>
+										<td>$750.00</td>
+										<td class="green">$250/33%</td>
+									</tr>
+									<tr>
+										<th></th>
+										<td>Opportunity B</td>
+										<td><div class="status status-partner">Partner</div></td>
+										<td>$500.00</td>
+										<td>$750.00</td>
+										<td class="green">$250/33%</td>
+									</tr>
+									<tr class="tr-total">
+										<th>Agency A Total</th>
+										<td></td>
+										<td></td>
+										<td>$2,000.00</td>
+										<td>$2,250.00</td>
+										<td class="green">$250/11%</td>
+									</tr>
+									<tr>
+										<th>Agency B</th>
+										<td>Opportunity 1</td>
+										<td><div class="status status-baseline">Baseline</div></td>
+										<td>$5,000.00</td>
+										<td>$4,000.00</td>
+										<td class="red">($1,000)/33%</td>
+									</tr>
+									<tr>
+										<th></th>
+										<td>Opportunity 2</td>
+										<td><div class="status status-baseline">Baseline</div></td>
+										<td>$1,000.00</td>
+										<td>$1,500.00</td>
+										<td class="green">$500/50%</td>
+									</tr>
+									<tr class="tr-total">
+										<th>Agency B Total</th>
+										<td></td>
+										<td></td>
+										<td>$6,000.00</td>
+										<td>$5,500.00</td>
+										<td class="red">($500)/9%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="opp2">
+						<div class="table-responsive">
+							<table class="table table-2 table-pitches table-opportunity table-borderless table-hover mt-3 mb-2">
+								<thead>
+									<tr>
+										<th>Agency</th>
+										<th>Revenue</th>
+										<th>Budget</th>
+										<th>Difference</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Agency A Total</th>
+										<td>$2,000.00</td>
+										<td>$2,250.00</td>
+										<td class="green">$250/11%</td>
+									</tr>
+									<tr>
+										<th>Agency B Total</th>
+										<td>$6,000.00</td>
+										<td>$5,500.00</td>
+										<td class="red">($500)/9%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1962,333 +1934,221 @@
 						</div>
 					</div>
 				</div>
-				<div class="pe-2">
-					<div class="table-responsive scroll scroll-table">
-						<table class="table table-2 table-pitches table-opportunity table-borderless mt-3 mb-0">
-							<thead>
-								<tr>
-									<th>Agency</th>
-									<th>Opportunity</th>
-									<th>Opportunity Type</th>
-									<th>Project</th>
-									<th>Content Type</th>
-									<th>Stories</th>
-									<th>Revenue</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>Agency A</th>
-									<td>Opportunity A</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>Project A</td>
-									<td>Content Type A</td>
-									<td>5</td>
-									<td>$75.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type B</td>
-									<td>5</td>
-									<td>$100.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td>Project B</td>
-									<td>Content Type A</td>
-									<td>5</td>
-									<td>$20.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type B</td>
-									<td>10</td>
-									<td>$10.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type C</td>
-									<td>5</td>
-									<td>$300.00</td>
-								</tr>
-								<tr class="tr-subtotal">
-									<th>Agency A</th>
-									<td>Opportunity A Subtotal</td>
-									<td>Baseline</td>
-									<td></td>
-									<td></td>
-									<td>30</td>
-									<td>$505.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity B</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>Project C</td>
-									<td>Content Type A</td>
-									<td>10</td>
-									<td>$100.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type B</td>
-									<td>10</td>
-									<td>$200.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type C</td>
-									<td>50</td>
-									<td>$500.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type D</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type E</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type F</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type G</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type H</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr class="tr-subtotal">
-									<th>Agency A</th>
-									<td>Opportunity B Subtotal</td>
-									<td>Baseline</td>
-									<td></td>
-									<td></td>
-									<td>80</td>
-									<td>$850.00</td>
-								</tr>
-								<tr class="tr-total">
-									<th>Agency A Totals</th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>440</td>
-									<td>$2,950.00</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+				<div class="table-responsive">
+					<table class="table table-2 table-pitches table-opportunity table-borderless table-hover mt-3 mb-0">
+						<thead>
+							<tr>
+								<th>Agency</th>
+								<th>Opportunity</th>
+								<th>Opportunity Type</th>
+								<th>Project</th>
+								<th>Content Type</th>
+								<th>Stories</th>
+								<th>Revenue</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Agency A</th>
+								<td>Opportunity A</td>
+								<td><div class="status status-baseline">Baseline</div></td>
+								<td>Project A</td>
+								<td>Content Type A</td>
+								<td>5</td>
+								<td>$75.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type B</td>
+								<td>5</td>
+								<td>$100.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td>Project B</td>
+								<td>Content Type A</td>
+								<td>5</td>
+								<td>$20.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type B</td>
+								<td>10</td>
+								<td>$10.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type C</td>
+								<td>5</td>
+								<td>$300.00</td>
+							</tr>
+							<tr class="tr-subtotal">
+								<th>Agency A</th>
+								<td>Opportunity A Subtotal</td>
+								<td>Baseline</td>
+								<td></td>
+								<td></td>
+								<td>30</td>
+								<td>$505.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td>Opportunity B</td>
+								<td><div class="status status-baseline">Baseline</div></td>
+								<td>Project C</td>
+								<td>Content Type A</td>
+								<td>10</td>
+								<td>$100.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type B</td>
+								<td>10</td>
+								<td>$200.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type C</td>
+								<td>50</td>
+								<td>$500.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type D</td>
+								<td>10</td>
+								<td>$50.00</td>
+							</tr>
+							<tr class="tr-subtotal">
+								<th>Agency A</th>
+								<td>Opportunity B Subtotal</td>
+								<td>Baseline</td>
+								<td></td>
+								<td></td>
+								<td>80</td>
+								<td>$850.00</td>
+							</tr>
+							<tr class="tr-total">
+								<th>Agency A Totals</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>440</td>
+								<td>$2,950.00</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 			<div class="cart h-auto overflow-hidden">
-				<div class="pe-2">
-					<div class="table-responsive scroll scroll-table">
-						<table class="table table-2 table-pitches table-opportunity table-borderless mt-3 mb-0">
-							<thead>
-								<tr>
-									<th>Agency</th>
-									<th>Opportunity</th>
-									<th>Opportunity Type</th>
-									<th>Project</th>
-									<th>Content Type</th>
-									<th>Stories</th>
-									<th>Revenue</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th>Agency B</th>
-									<td>Opportunity A</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>Project A</td>
-									<td>Content Type A</td>
-									<td>5</td>
-									<td>$75.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type B</td>
-									<td>5</td>
-									<td>$100.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td>Project B</td>
-									<td>Content Type A</td>
-									<td>5</td>
-									<td>$20.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type B</td>
-									<td>10</td>
-									<td>$10.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type C</td>
-									<td>5</td>
-									<td>$300.00</td>
-								</tr>
-								<tr class="tr-subtotal">
-									<th>Agency B</th>
-									<td>Opportunity A Subtotal</td>
-									<td>Baseline</td>
-									<td></td>
-									<td></td>
-									<td>30</td>
-									<td>$505.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>Opportunity B</td>
-									<td><div class="status status-baseline">Baseline</div></td>
-									<td>Project C</td>
-									<td>Content Type A</td>
-									<td>10</td>
-									<td>$100.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type B</td>
-									<td>10</td>
-									<td>$200.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type C</td>
-									<td>50</td>
-									<td>$500.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type D</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type E</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type F</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type G</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>Content Type H</td>
-									<td>10</td>
-									<td>$50.00</td>
-								</tr>
-								<tr class="tr-subtotal">
-									<th>Agency B</th>
-									<td>Opportunity B Subtotal</td>
-									<td>Baseline</td>
-									<td></td>
-									<td></td>
-									<td>80</td>
-									<td>$850.00</td>
-								</tr>
-								<tr class="tr-total">
-									<th>Agency B Totals</th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>440</td>
-									<td>$2,950.00</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+				<div class="table-responsive">
+					<table class="table table-2 table-pitches table-opportunity table-borderless table-hover mt-3 mb-0">
+						<thead>
+							<tr>
+								<th>Agency</th>
+								<th>Opportunity</th>
+								<th>Opportunity Type</th>
+								<th>Project</th>
+								<th>Content Type</th>
+								<th>Stories</th>
+								<th>Revenue</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Agency B</th>
+								<td>Opportunity C</td>
+								<td><div class="status status-baseline">Baseline</div></td>
+								<td>Project D</td>
+								<td>Content Type A</td>
+								<td>10</td>
+								<td>$100.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type D</td>
+								<td>200</td>
+								<td>$1,000.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type F</td>
+								<td>50</td>
+								<td>$200.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type G</td>
+								<td>10</td>
+								<td>$500.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type H</td>
+								<td>50</td>
+								<td>$50.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type M</td>
+								<td>100</td>
+								<td>$1,000.00</td>
+							</tr>
+							<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Content Type R</td>
+								<td>10</td>
+								<td>$100.00</td>
+							</tr>
+							<tr class="tr-total">
+								<th>Agency B Totals</th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>440</td>
+								<td>$2,950.00</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</section>
