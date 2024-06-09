@@ -928,6 +928,16 @@ label
 					&.active, &:hover
 						span
 							border: 1px solid $color-green
+		&.owl-turquoise
+			.owl-dots
+				.owl-dot 
+					span
+						background: $color-turquoise
+						.dark-mode &
+							background: $color-turquoise
+					&.active, &:hover
+						span
+							border: 1px solid $color-turquoise
 
 .owl-1
 	.fz-30
@@ -2927,3 +2937,21 @@ label
 					left: 50%
 					transform: translate(-50%, -50%)
 					border-radius: 100px
+
+// Project-ACE
+
+.alert-ace
+	background: $color-orange
+	color: $color-white
+	border: 0
+	font-size: 16px
+	border-radius: 14px
+	padding: 20px 48px 20px 20px
+	line-height: 1.2
+	@media (max-width: 767.98px)
+		font-size: 14px
+	.btn-close 
+		transition: $transition
+		background-image: url(../img/cross-white.svg)
+		&:focus 
+			box-shadow: none

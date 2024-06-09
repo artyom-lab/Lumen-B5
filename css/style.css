@@ -910,6 +910,12 @@ label {
     background: #3ad654; }
 .owl-carousel.owl-dots-big.owl-green .owl-dots .owl-dot.active span, .owl-carousel.owl-dots-big.owl-green .owl-dots .owl-dot:hover span {
   border: 1px solid #3ad654; }
+.owl-carousel.owl-dots-big.owl-turquoise .owl-dots .owl-dot span {
+  background: #33bfb1; }
+  .dark-mode .owl-carousel.owl-dots-big.owl-turquoise .owl-dots .owl-dot span {
+    background: #33bfb1; }
+.owl-carousel.owl-dots-big.owl-turquoise .owl-dots .owl-dot.active span, .owl-carousel.owl-dots-big.owl-turquoise .owl-dots .owl-dot:hover span {
+  border: 1px solid #33bfb1; }
 
 @media (max-width: 575.98px) {
   .owl-1 .fz-30 {
@@ -2848,5 +2854,22 @@ label {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 100px; }
+
+.alert-ace {
+  background: #e88903;
+  color: #FFF;
+  border: 0;
+  font-size: 16px;
+  border-radius: 14px;
+  padding: 20px 48px 20px 20px;
+  line-height: 1.2; }
+  @media (max-width: 767.98px) {
+    .alert-ace {
+      font-size: 14px; } }
+  .alert-ace .btn-close {
+    transition: 0.3s;
+    background-image: url(../img/cross-white.svg); }
+    .alert-ace .btn-close:focus {
+      box-shadow: none; }
 
 /*# sourceMappingURL=style.css.map */
